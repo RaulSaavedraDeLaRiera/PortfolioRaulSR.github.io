@@ -518,4 +518,27 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Inicializar habilidades
+    initializeSkillItems();
+
+    // Botón de idioma - efecto hover
+    const languageToggle = document.querySelector('.language-toggle');
+    if (languageToggle) {
+        languageToggle.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px) scale(1.05)';
+        });
+
+        languageToggle.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+
+        languageToggle.addEventListener('click', function() {
+            // Efecto de clic
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+    }
 }); 

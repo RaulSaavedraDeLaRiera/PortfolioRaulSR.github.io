@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/education-experience.css">
+    <link rel="stylesheet" href="css/language.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -40,6 +41,11 @@
             </div>
         </nav>
     </header>
+
+    <!-- Botón de cambio de idioma -->
+    <button class="language-toggle" onclick="toggleLanguage()">
+        <span class="active">ES</span><span>/</span><span>EN</span>
+    </button>
 
     <main>
         <section id="home" class="hero">
@@ -116,8 +122,8 @@
                             <div class="skill-item"><span class="skill-name">MongoDB</span><span class="skill-level">Intermediate</span></div>
                             <div class="skill-item"><span class="skill-name">Firestore</span><span class="skill-level">Intermediate</span></div>
                             <div class="skill-item"><span class="skill-name">Buckets</span><span class="skill-level">Beginner</span></div>
-                            <div class="skill-item"><span class="skill-name">APIs REST</span><span class="skill-level">Intermediate</span></div>
-                            <div class="skill-item"><span class="skill-name">Microservicios</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">REST APIs</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Microservices</span><span class="skill-level">Intermediate</span></div>
                         </div>
                     </div>
                     <div class="skills-row">
@@ -148,7 +154,7 @@
                                 <div class="skill-item"><span class="skill-name">C++</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">LUA</span><span class="skill-level">Beginner</span></div>
                                 <div class="skill-item"><span class="skill-name">Scripting</span><span class="skill-level">Intermediate</span></div>
-                                <div class="skill-item"><span class="skill-name">Gráficos 2D/3D</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">2D/3D Graphics</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">Audio</span><span class="skill-level">Beginner</span></div>
                                 <div class="skill-item"><span class="skill-name">Unreal Engine</span><span class="skill-level">Beginner</span></div>
                             </div>
@@ -416,5 +422,14 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/languages.js"></script>
+    <script>
+        // Función para alternar entre idiomas
+        function toggleLanguage() {
+            const currentLang = localStorage.getItem('preferredLanguage') || 'es';
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+            changeLanguage(newLang);
+        }
+    </script>
 </body>
 </html> 

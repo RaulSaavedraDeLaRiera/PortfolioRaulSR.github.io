@@ -1,0 +1,78 @@
+/* Estilos para el botón de cambio de idioma */
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.language-toggle:hover {
+    transform: translateY(-2px);
+    background: var(--secondary-color);
+}
+
+.language-toggle:active {
+    transform: translateY(0);
+}
+
+.language-toggle span {
+    transition: all 0.3s ease;
+}
+
+.language-toggle span.active {
+    color: #fff;
+    font-weight: 700;
+}
+
+.language-toggle span:not(.active) {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+/* Animación de entrada */
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.language-toggle {
+    animation: slideInFromTop 0.5s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .language-toggle {
+        top: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-toggle {
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+} 
