@@ -1,444 +1,420 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raúl Saavedra Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon_4.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raúl SR : Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/education-experience.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <div id="preloader">
-      <div class="jumping-dots">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+        <div class="loading-animation">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
     </div>
 
-    <header id="header" class="header">
-      <div class="container container-lg">
-        <div class="header-nav">
-          <a href="#home" class="logo">Raul<span>:</span>SR</a>
-          <nav id="nav" class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="#home" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link">Works</a>
-              </li>
-              <!--
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-              -->
-            </ul>
-            <button id="nav-btn" class="nav-btn">
-              <img
-                id="nav-btn-img"
-                src="img/icons/open.svg"
-                alt="Navigation button"
-              />
-            </button>
-          </nav>
-        </div>
-      </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#home" class="logo">Raúl<span>:</span>SR</a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                    <li><a href="#education" class="nav-link">Estudios</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="home" class="hero">
-      <div class="container container-lg">
-        <div
-          class="hero-row"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="1800"
-          data-aos-duration="2000"
-        >
-          <div class="hero-content">
-            <span class="hero-greeting"> Soy</span>
-            <h1 class="hero-heading">Raúl Saavedra</h1>
-            <span class="hero-heading-subtitle"
-              >Estudiante de <b>Desarrollo de Videojuegos</b> en la UCM y de <b>Web Development</b> en Neoland.</span
-            >
-            <!--
-            <div class="about-social-list">
-              <div class="social-links-row">
-                <a href="#!">
-                  <img
-                    src="img/social_icons/github.svg"
-                    alt="Link to GitHub account"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    src="img/social_icons/linkedin.svg"
-                    alt="Link to linkedin profile"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    src="img/social_icons/xing.svg"
-                    alt="Link to Xing profile"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    src="img/social_icons/facebook.svg"
-                    alt="Link to facebook profile"
-                /></a>
-                <a href="#!">
-                  <img
-                    src="img/social_icons/instagram.svg"
-                    alt="Link to instagram profile"
-                /></a>
-              </div>
-            </div>
-            -->
-            <div>
-              <a href="#projects" class="btn">Mi Portfolio</a>
-             <!--<a href="#contact" class="btn btn-white">Contact Me</a>--> 
-            </div>
-          </div>
-          <div class="hero-img">
-            <img
-              src="img/hero/hero.png"
-              alt="Picture of me!</a>
-              "
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-title">
-          <h2 class="title">Sobre mí:</h2>
-        </div>
-        <div class="about-row">
-          <div class="about-content">
-            <p class="about-descr">
-              Soy un estudiante al que desde pequeño le han gustado los ordenadores y los videojuegos. Por estos últimos comencé a estudiar un
-              máster propio en Desarrollo de Videojuegos y Game Design y posteriormente el Grado en Desarrollo de Videojuegos en la UCM. 
-              Durante el grado, descubrí que mi interés por el desarrollo de software va más allá de los videojuegos, lo que me motivó a expandir mis conocimientos hacia el desarrollo web, 
-              comenzando un máster propio en Web Development en la escuela Neoland.<br />
-              <br />
-              Me considero una persona proactiva y con muchas ganas de aprender, alguien a quien le gustan las críticas buenas pero aún más las malas. 
-              <br>Mi objetivo es contribuir al máximo en cualquier equipo que me dé la oportunidad de desarrollarme profesionalmente, aportando compromiso y dedicación.
-            </p>
-            <div class="about-download-btn">
-              <a href="https://drive.google.com/file/d/1S2fDDrJlLCBZ1NlTExy9RtviCFlpP1K0/view?usp=sharing" class="btn btn-white">Download CV</a>
-            </div>
-          </div>
-          <div class="about-skills">
-            <div class="skill">
-              <div class="skill-title">C/C++/C#</div>
-              <div class="skill-percent">80%</div>
-              <div class="skillbar" style="width: 80%"></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">Java</div>
-              <div class="skill-percent">55%</div>
-              <div class="skillbar" style="width: 55%"></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">JavaScript</div>
-              <div class="skill-percent">55%</div>
-              <div class="skillbar" style="width: 55%"></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">HTML/CSS</div>
-              <div class="skill-percent">50%</div>
-              <div class="skillbar" style="width: 50%"></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">Python</div>
-              <div class="skill-percent">50%</div>
-              <div class="skillbar" style="width: 50%"></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">Photoshop</div>
-              <div class="skill-percent">35%</div>
-              <div class="skillbar" style="width: 35%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="services-row">
-          <div class="service-card" data-aos="fade-down">
-            <img class="service-card-img" src="img/services/01.svg" alt="" />
-            <h3 class="service-card-title">Desarrollo de Software</h3>
-            <p>
-              He desarrollado numerosos programas que,
-               aunque centrados en videojuegos, 
-               me han permitido explorar diversos entornos y crear funcionalidades muy variadas.  <br>
-               Estos proyectos incluyen desde aplicaciones Android que aprovechan funciones nativas del sistema 
-               hasta motores de videojuegos diseñados para generar software modular y flexible.
-            </p>
-          </div>
-
-          <div class="service-card" data-aos="fade-down">
-            <img class="service-card-img" src="img/services/02.svg" alt="" />
-            <h3 class="service-card-title">Desarrollo Web</h3>
-            <p>
-              Cuento con una base sólida en JavaScript y, aunque mi experiencia aún es limitada, 
-              he adquirido conocimientos en HTML5 y CSS3 a través de diversos proyectos realizados durante el grado 
-              y los primeros módulos del máster.          
-            </p>
-          </div>
-
-          <div class="service-card" data-aos="fade-down">
-            <img class="service-card-img" src="img/services/03.svg" alt="" />
-            <h3 class="service-card-title">Flujo de trabajo</h3>
-            <p>
-              He trabajado con diversos entornos de desarrollo, como Visual Studio, Visual Studio Code y Eclipse.<br>
-              Gracias a mi experiencia en proyectos grupales durante el grado, 
-              estoy familiarizado con sistemas de control de versiones como Git y con metodologías ágiles como Scrum.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container container-lg">
-        <div class="projects-title">
-          <h2 class="title">Proyectos</h2>
-        </div>
-
-        <div class="projects-row">
-          <div class="project-box">
-            <a href="https://github.com/Grupo03Proyectos3/Motor-Grupo3">
-              <img class="project-img" src="img/works/01.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Flamingo Engine</h5>
-                  <p class="white">Motor de videojuegos 3D desarollado en C++ en conjunto con librerías como LUA, Ogre, SDL y Bullet.
-                    Un pequeño juego de acción, Eldersbane,  fue desarrollado integramente en este motor.
-                  </p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="greeting" data-text="Soy">Soy</span>
+                        <h1 class="name" data-text="Raúl Saavedra">Raúl Saavedra</h1>
+                        <p class="title-text" data-text="Desarrollador Backend y Cloud">Desarrollador Backend y Cloud</p>
+                        <p class="description" data-text="Apasionado por la tecnología y lo que es capaz de hacer">Apasionado por la tecnología y lo que es capaz de hacer</p>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#about" class="btn btn-secondary">Sobre Mí</a>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="project-box">
-            <a href="https://keyduckstudios-portfolio.my.canva.site/mobile-casual-games">
-              <img class="project-img" src="img/works/02.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Juegos en Unity para móvil</h5>
-                  <p class="white">Varios juegos desarrollados en Unity y adaptados para multitud de dispositivos móviles.</p>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/hero/hero.png" alt="Raúl Saavedra" class="avatar">
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="project-box">
-            <a href="https://github.com/RaulSaavedraRiera/Practica2Moviles">
-              <img class="project-img" src="img/works/03.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Mastermind</h5>
-                  <p class="white">Aplicación Android desarrollada en Android Studio. Hace uso de funciones nativas
-                    y sensores del dispositivo y cuenta con un sistema de anuncios.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="project-box">
-            <a href="https://github.com/miggon23/MonkeyDelivery">
-              <img class="project-img" src="img/works/04.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Monkey Delivery</h5>
-                  <p class="white">Videojuego 2D desarrollado en C++ y SDL. Con foco en el apartado artístico, UI y UX.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="project-box">
-            <a href="https://github.com/RaulSaavedraRiera/ICI/tree/main">
-              <img class="project-img" src="img/works/07.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Inteligencia artificial aplicada en el juego de MsPacman</h5>
-                  <p class="white">Proyecto que combina múltiples enfoques de IA, como algorítmica, lógica difusa y máquinas de estados, 
-                    aplicados tanto a Ms. Pac-Man como a los fantasmas. Desarrollado en Java.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!--
-          <div class="project-box">
-            <a href="https://github.com/javixxu/Tracking-System?tab=readme-ov-file">
-              <img class="project-img" src="img/works/08.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Estudio e implementación de una herramienta de testing</h5>
-                  <p class="white">Herramienta para Unity que calcula el área navegable de un mapa 3D. 
-                  Cuenta con elementos de automatización desarrollados en Python.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          -->
-          <div class="project-box">
-            <a href="https://github.com/RaulSaavedraRiera/DSI2022">
-              <img class="project-img" src="img/works/08.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Peach Highschool: videojuego web</h5>
-                  <p class="white">Demo de juego web, centrada en la interfaz y la experiencia del usuario, donde se aplican múltiples principios 
-                    de accesibilidad, visibilidad, usabilidad, consistencia visual y otros relacionados.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="project-box">
-            <a href="https://github.com/elisatodd/Grupo-3-PVLI-2021-22">
-              <img class="project-img" src="img/works/05.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">The Right Man</h5>
-                  <p class="white">Videojuego web desarrollado enteramente en JavaScript usando el motor Phaser 3. Teniendo en cuenta 
-                    las características del desarrollo web.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="project-box">
-            <a href="https://github.com/javixxu/Tracking-System?tab=readme-ov-file">
-              <img class="project-img" src="img/works/06.png" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Sistema de Detección de Zonas Accesibles en Mapas 3D</h5>
-                  <p class="white">Herramienta para Unity que calcula el área navegable de un mapa 3D. 
-                  Cuenta con elementos de automatización desarrollados en Python.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>
+        </section>
 
-    <!--
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="contact-title">
-          <h2 class="title">Contact</h2>
-        </div>
-        <div class="contact-content">
-          <p>
-            Tell me about your project.
-            <br />
-            Let's talk and work together!
-          </p>
-        </div>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p>Desde pequeño siempre he preferido el ratón al balón. Cuando tuve que elegir a qué dedicarme supe que una pantalla y un teclado tenían que estar involucrados.</p>
 
-        <form data-aos="zoom-in">
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-          </div>
+                        <p>Comencé con un máster en desarrollo y diseño de videojuegos pero rápidamente me di cuenta de que se me quedaba corto, quería saber más cómo funcionaba, qué hacía la magia. Por eso estudié el grado de Informática con especialización en videojuegos en la UCM. Ahí descubrí que mi pasión iba más allá de los juegos: me fascinaba cómo los unos y ceros pueden dar forma a la tecnología que usamos cada día.</p>
+                        
+                        <p>Con esta idea, completé un máster en desarrollo web y actualmente trabajo como desarrollador backend centrado en Cloud, donde pongo a prueba cada día lo que soy capaz de construir con código.</p>
+                        
+                        <a href="https://drive.google.com/file/d/1S2fDDrJlLCBZ1NlTExy9RtviCFlpP1K0/view?usp=sharing" class="btn btn-outline" target="_blank">Descargar CV</a>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Años de Estudio</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>Tecnologías Dominadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-        </form>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Habilidades Técnicas</h2>
+                <div class="skills-grid custom-skills-layout">
+                    <div class="skill-category skill-backend" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="category-title">Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item"><span class="skill-name">Python</span><span class="skill-level">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">FastAPI</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Flask</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Java</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Express</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Node.js</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">C#</span><span class="skill-level">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">Google Cloud Platform</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Cloud Run</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Cloud Functions</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Pub/Sub</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">MongoDB</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Firestore</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Buckets</span><span class="skill-level">Beginner</span></div>
+                            <div class="skill-item"><span class="skill-name">APIs REST</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-item"><span class="skill-name">Microservicios</span><span class="skill-level">Intermediate</span></div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skill-category skill-frontend" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="category-title">Frontend</h3>
+                            <div class="skills-list">
+                                <div class="skill-item"><span class="skill-name">React</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">HTML</span><span class="skill-level">Advanced</span></div>
+                                <div class="skill-item"><span class="skill-name">CSS</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">JavaScript</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Kotlin</span><span class="skill-level">Beginner</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category skill-devprod" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="category-title">Desarrollo y Productividad</h3>
+                            <div class="skills-list">
+                                <div class="skill-item"><span class="skill-name">Git</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">GitHub</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Agile</span></div>
+                                <div class="skill-item"><span class="skill-name">Scrum</span></div>
+                                <div class="skill-item"><span class="skill-name">VS Code</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category skill-games" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="category-title">Videojuegos</h3>
+                            <div class="skills-list">
+                                <div class="skill-item"><span class="skill-name">Unity</span><span class="skill-level">Advanced</span></div>
+                                <div class="skill-item"><span class="skill-name">C++</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">LUA</span><span class="skill-level">Beginner</span></div>
+                                <div class="skill-item"><span class="skill-name">Scripting</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Gráficos 2D/3D</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Audio</span><span class="skill-level">Beginner</span></div>
+                                <div class="skill-item"><span class="skill-name">Unreal Engine</span><span class="skill-level">Beginner</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="contact-button" data-aos="fade-up">
-          <a href="#!" class="btn btn-red">Send Message</a>
-        </div>
-      </div>
-    </section>
-    -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <!-- Proyecto 1: Microservicios -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="project-title">Arquitectura de Microservicios en Cloud para Procesamiento Clínico con IA</h3>
+                        <div class="project-body-horizontal">
+                            <div class="project-info">
+                                <p>
+                                    Plataforma escalable desplegada en Google Cloud que integra múltiples microservicios para gestionar datos clínicos,
+                                    autenticación y procesamiento mediante modelos de IA. Incluye servicios especializados para la validación y almacenamiento de datos,
+                                    ejecución de trabajos en la nube, y sincronización con estándares FHIR y Firestore. Se utilizan tecnologías como Cloud Run, Cloud Functions,
+                                    Pub/Sub, Firestore, Firebase Auth y buckets de almacenamiento, garantizando alta disponibilidad y seguridad.
+                                </p>
+                            </div>
+                            <div class="project-tags-grid">
+                                <span class="tag">Microservicios</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">Cloud Run</span>
+                                <span class="tag">Cloud Functions</span>
+                                <span class="tag">Pub/Sub</span>
+                                <span class="tag">Firestore</span>
+                                <span class="tag">Firebase Auth</span>
+                                <span class="tag">Buckets</span>
+                                <span class="tag">FHIR</span>
+                            </div>
+                        </div>
+                        <div class="project-btn-bottom">
+                            <button class="btn btn-blocked" disabled>Código Privado</button>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2: API Clínica -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="project-title">API para Gestión Clínica con App Android Nativa</h3>
+                        <div class="project-body-horizontal">
+                            <div class="project-info">
+                                <p>
+                                    Desarrollo de API segura para gestión de datos de pacientes con autenticación y almacenamiento en base de datos. 
+                                    La aplicación Android nativa sincroniza datos manuales y automáticos, usando mecanismos para mantener la conexión activa y 
+                                    sincronización en tiempo real.
+                                </p>
+                            </div>
+                            <div class="project-tags-grid">
+                                <span class="tag">API REST</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Android</span>
+                                <span class="tag">Firestore</span>
+                                <span class="tag">Firebase Auth</span>
+                            </div>
+                        </div>
+                        <div class="project-btn-bottom">
+                            <button class="btn btn-blocked" disabled>Código Privado</button>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3: Videojuego móvil -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="project-title">Videojuego Móvil Con Funciones Sociales y Geoposicionamiento</h3>
+                        <div class="project-body-horizontal">
+                            <div class="project-info">
+                                <p>
+                                    Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. 
+                                    Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos.
+                                </p>
+                            </div>
+                            <div class="project-tags-grid">
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">API REST</span>
+                                <span class="tag">Android</span>
+                                <span class="tag">Unity</span>
+                            </div>
+                        </div>
+                        <div class="project-btn-bottom">
+                            <a href="https://github.com/RaulSaavedraRiera/TFG2024-AntonioPRaulS" target="_blank" class="btn btn-github">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <!-- Proyecto 4: Motor de videojuegos -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="project-title">Motor de Videojuegos 3D</h3>
+                        <div class="project-body-horizontal">
+                            <div class="project-info">
+                                <p>
+                                    Desarrollo desde cero de un motor de videojuegos con soporte para gráficos 2D/3D, físicas, audio y scripting. 
+                                    Implementado en C++ y LUA, incluyendo un juego funcional construido sobre esta arquitectura propia.
+                                </p>
+                            </div>
+                            <div class="project-tags-grid">
+                                <span class="tag">C++</span>
+                                <span class="tag">LUA</span>
+                                <span class="tag">Scripting</span>
+                                <span class="tag">Gráficos 3D</span>
+                                <span class="tag">Gráficos 2D</span>
+                                <span class="tag">Audio</span>
+                            </div>
+                        </div>
+                        <div class="project-btn-bottom">
+                            <a href="https://github.com/Grupo03Proyectos3/Motor-Grupo3" target="_blank" class="btn btn-github">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Experiencia Laboral</h2>
+                <div class="experience-grid">
+        
+                    <!-- Lo profesional-->
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="experience-header">
+                            <h3>Cloud & Backend Developer</h3>
+                            <span class="experience-date">2025 - Presente</span>
+                        </div>
+                        <p class="company">Mential Health Technologies</p>
+                        <p>
+                            Diseño e implementación de soluciones en la nube centradas en la creación de APIs RESTful, automatización de procesos y gestión de datos.
+                             Desarrollo de microservicios desplegados en Google Cloud Platform. Colaboración puntual en el desarrollo de aplicaciones móviles nativas y tareas frontend.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">Cloud</span>
+                            <span class="tag">APIs REST</span>
+                            <span class="tag">Microservicios</span>
+                            <span class="tag">Automatización</span>
+                            <span class="tag">Bases de Datos</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Google Cloud Platform</span>
+                        </div>
+                    </div>
+                    
+        
+                    <!-- Lo personal-->
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="experience-header">
+                            <h3>Desarrollador de Videojuegos</h3>
+                            <span class="experience-date">2023 - 2024</span>
+                        </div>
+                        <p class="company">Proyectos Personales y Colaboraciones</p>
+                        <p>
+                            Creación de videojuegos para dispositivos móviles utilizando Unity. Participación en la etapa de concepto y desarrollo, en colaboración con varias empresas.
+                        </p>
+                        <div class="experience-tags">
+                            <div class="tags-container">
+                                <span class="tag">Unity</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Mobile</span>
+                            </div>
+                            <div class="experience-cta">
+                                <a href="https://keyduckstudios-portfolio.my.canva.site/mobile-casual-games" target="_blank" class="btn btn-primary">Ver Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Estudios</h2>
+                <div class="education-grid">
+                    <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="education-header">
+                            <h3>Máster en Web Development</h3>
+                            <span class="education-date">2025</span>
+                        </div>
+                        <p class="institution">Neoland</p>
+                        <p>Especialización en desarrollo web moderno con tecnologías frontend y backend.</p>
+                    </div>
+                    <div class="education-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="education-header">
+                            <h3>Grado en Desarrollo de Videojuegos</h3>
+                            <span class="education-date">2020 - 2024</span>
+                        </div>
+                        <p class="institution">Universidad Complutense de Madrid</p>
+                        <p>Formación completa en programación y desarrollo de software con especialización en videojuegos.</p>
+                    </div>
+                    <div class="education-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="education-header">
+                            <h3>Máster en Desarrollo de Videojuegos y Game Design</h3>
+                            <span class="education-date">2019 - 2020</span>
+                        </div>
+                        <p class="institution">Master D</p>
+                        <p>Introducción al desarrollo de videojuegos y diseño de experiencias interactivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-row">
-          <div class="social-links-row footer-social">
-            <a href="https://github.com/RaulSaavedraRiera">
-              <img
-                src="img/social_icons/github.svg"
-                alt="Link to GitHub account"
-              />
-            </a>
-
-            <!--
-            <a href="#!">
-              <img
-                src="img/social_icons/linkedin.svg"
-                alt="Link to linkedin profile"
-              />
-            </a>
-
-            <a href="#!">
-              <img src="img/social_icons/xing.svg" alt="Link to Xing profile" />
-            </a>
-
-            <a href="#!">
-              <img
-                src="img/social_icons/facebook.svg"
-                alt="Link to facebook profile"
-            /></a>
-
-            <a href="#!">
-              <img
-                src="img/social_icons/instagram.svg"
-                alt="Link to instagram profile"
-            /></a>
-          </div>
-          -->
-
-          <!--
-          <div class="footer-copyright">
-            <p>&copy; Copyright John Sample 2024 | Designed by John Sample</p>
-          </div>-->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section contact-section">
+                    <div class="contact-left">
+                        <h3 class="footer-name">Contacto</h3>
+                        <h4 class="contact-title">Contacto</h4>
+                    </div>
+                    <div class="contact-center">
+                        <div class="contact-options">
+                            <!-- Icono LinkedIn generado con SVG -->
+                            <a href="https://www.linkedin.com/in/raul-saavedra-de-la-riera-158692341/" target="_blank" class="contact-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                            <!-- Icono email generado con SVG -->
+                            <button class="contact-link" id="showContactForm">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                Enviame un mensaje
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact-form" id="contactFormContainer" style="display: none;">
+                        <form id="contactForm" action="https://formspree.io/f/xzzvggee" method="POST">
+                            <div class="form-layout">
+                                <div class="form-left">
+                                    <div class="name-email-row">
+                                        <input type="text" name="name" placeholder="Tu nombre" required>
+                                        <input type="email" name="email" placeholder="Tu correo" required>
+                                    </div>
+                                    <input type="text" name="subject" placeholder="Asunto" required>
+                                    <div class="submit-container">
+                                        <!-- Icono check de éxito generado con SVG -->
+                                        <div class="success-tick" id="successTick">
+                                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                            </svg>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                                <div class="form-center">
+                                    <textarea name="message" placeholder="Mensaje" required></textarea>
+                                </div>
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Raúl Saavedra</p>
+            </div>
         </div>
-      </div>
     </footer>
 
-    <div id="goToTop" class="goToTop">
-      <a href="#home">
-        <img src="img/icons/arrow_up.svg" alt="Back to top"
-      /></a>
-    </div>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="js/main.js"></script>
-  </body>
-</html>
+</body>
+</html> 
