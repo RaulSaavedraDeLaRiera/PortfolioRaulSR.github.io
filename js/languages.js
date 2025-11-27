@@ -96,7 +96,7 @@ const languages = {
             },
             job2: {
                 title: "Desarrollador de Videojuegos",
-                company: "Proyectos Personales y Colaboraciones",
+                company: "KeyDuck Studios y Colaboraciones",
                 period: "2023 - 2024",
                 summary: "Conceptualización y desarrollo de juegos móviles con Unity.",
                 description: "Creación de videojuegos para dispositivos móviles utilizando Unity. Participación en la etapa de concepto y desarrollo, en colaboración con varias empresas.",
@@ -238,7 +238,7 @@ const languages = {
             },
             job2: {
                 title: "Video Game Developer",
-                company: "Personal Projects and Collaborations",
+                company: "KeyDuck Studios and Collaborations",
                 period: "2023 - 2024",
                 summary: "Designing and building mobile games with Unity.",
                 description: "Creation of video games for mobile devices using Unity. Participation in the concept and development stage, in collaboration with various companies.",

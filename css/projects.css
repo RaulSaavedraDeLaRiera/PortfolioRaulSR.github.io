@@ -291,10 +291,10 @@
         margin-bottom: 0;
     }
     .project-title {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     .project-info p {
-        font-size: 0.95rem;
+        font-size: 1.3rem;
     }
     .btn-github, .btn-blocked {
         font-size: 1.1rem;
@@ -318,11 +318,11 @@
     }
     
     .project-title {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
     
     .project-info p {
-        font-size: 0.85rem;
+        font-size: 1.15rem;
     }
     
     .project-tags-grid {
