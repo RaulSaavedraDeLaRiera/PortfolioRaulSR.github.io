@@ -541,4 +541,117 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 150);
         });
     }
+
+    // Experiencia interactiva
+    function initializeExperienceSection() {
+        const experienceItems = document.querySelectorAll('.experience-item');
+        const detailCards = document.querySelectorAll('.experience-detail-card');
+        const placeholders = document.querySelectorAll('.experience-detail-placeholder');
+
+        if (!experienceItems.length) {
+            return;
+        }
+
+        const itemByKey = {};
+        experienceItems.forEach(item => {
+            itemByKey[item.dataset.experienceKey] = item;
+        });
+
+        function hidePlaceholders() {
+            placeholders.forEach(placeholder => placeholder.classList.remove('active'));
+        }
+
+        function showPlaceholder(type, jobKey) {
+            detailCards.forEach(card => card.classList.remove('active'));
+            placeholders.forEach(placeholder => {
+                const matchesType = placeholder.dataset.placeholderType === type;
+                const matchesJob = !placeholder.dataset.placeholderJob || placeholder.dataset.placeholderJob === jobKey;
+                placeholder.classList.toggle('active', matchesType && matchesJob);
+            });
+        }
+
+        function showProject(projectKey) {
+            let matched = false;
+
+            detailCards.forEach(card => {
+                if (card.dataset.projectDetail === projectKey) {
+                    card.classList.add('active');
+                    matched = true;
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+
+            if (matched) {
+                hidePlaceholders();
+            } else {
+                showPlaceholder('general');
+            }
+        }
+
+        function activateItem(item, preferredNode = null) {
+            const jobKey = item.dataset.experienceKey;
+            experienceItems.forEach(other => other.classList.remove('active'));
+            item.classList.add('active');
+
+            document.querySelectorAll('.timeline-node').forEach(node => node.classList.remove('active'));
+            document.querySelectorAll('.experience-timeline').forEach(timeline => {
+                const matches = timeline.dataset.timelineJob === jobKey;
+                timeline.classList.toggle('active', matches);
+            });
+
+            const projectNodes = document.querySelectorAll(`.timeline-node[data-project-job="${jobKey}"]`);
+
+            if (projectNodes.length) {
+                const preferred = preferredNode || projectNodes[0];
+                preferred.classList.add('active');
+                showProject(preferred.dataset.projectTarget);
+                return;
+            }
+
+            showPlaceholder('cta', jobKey);
+        }
+
+        experienceItems.forEach(item => {
+            const toggle = item.querySelector('.experience-item-toggle');
+            const card = item.querySelector('.experience-item-card');
+
+            if (toggle) {
+                toggle.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    activateItem(item);
+                });
+            }
+
+            if (card) {
+                card.addEventListener('click', (event) => {
+                    if (event.target.closest('.experience-timeline') || event.target.closest('.timeline-node')) {
+                        return;
+                    }
+                    activateItem(item);
+                });
+            }
+        });
+
+        const timelineNodes = document.querySelectorAll('.timeline-node');
+        timelineNodes.forEach(node => {
+            node.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const jobKey = node.dataset.projectJob;
+                const item = itemByKey[jobKey];
+                if (item) {
+                    activateItem(item, node);
+                }
+            });
+        });
+
+        const defaultActive = document.querySelector('.experience-item.active');
+        if (defaultActive) {
+            activateItem(defaultActive);
+        } else {
+            activateItem(experienceItems[0]);
+        }
+    }
+
+    initializeExperienceSection();
 }); 

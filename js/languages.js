@@ -34,6 +34,7 @@ const languages = {
         skills: {
             title: "Habilidades Técnicas",
             categories: {
+                data: "Data & Cloud",
                 backend: "Backend",
                 frontend: "Frontend",
                 devprod: "Desarrollo y Productividad",
@@ -44,16 +45,16 @@ const languages = {
         projects: {
             title: "Proyectos Destacados",
             project1: {
-                title: "Arquitectura de Microservicios en Cloud para Procesamiento Clínico con IA",
-                description: "Plataforma escalable desplegada en Google Cloud que integra múltiples microservicios para gestionar datos clínicos, autenticación y procesamiento mediante modelos de IA. Incluye servicios especializados para la validación y almacenamiento de datos, ejecución de trabajos en la nube, y sincronización con estándares FHIR y Firestore. Se utilizan tecnologías como Cloud Run, Cloud Functions, Pub/Sub, Firestore, Firebase Auth y buckets de almacenamiento, garantizando alta disponibilidad y seguridad."
+                title: "Web Application for Teaching",
+                description: "Aplicación full-stack construida con NestJS, MongoDB, Next.js, TypeScript y JWT. Permite diseñar cursos modulares, gestionar bases de datos de alumnos y controlar el progreso mediante herencia estructurada de cursos, módulos y ejercicios."
             },
             project2: {
-                title: "API para Gestión Clínica con App Android Nativa",
-                description: "Desarrollo de API segura para gestión de datos de pacientes con autenticación y almacenamiento en base de datos. La aplicación Android nativa sincroniza datos manuales y automáticos, usando mecanismos para mantener la conexión activa y sincronización en tiempo real."
-            },
-            project3: {
                 title: "Videojuego Móvil Con Funciones Sociales y Geoposicionamiento",
                 description: "Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos."
+            },
+            project3: {
+                title: "ChallengeMe · Fitness Social Platform",
+                description: "Plataforma social para crear retos deportivos multi-actividad, compartir publicaciones y seguir el progreso con visualizaciones (React 19 + Vite + Chart.js). Backend Express + MongoDB con JWT, Swagger y despliegue productivo en Render/Netlify."
             },
             project4: {
                 title: "Motor de Videojuegos 3D",
@@ -65,40 +66,67 @@ const languages = {
         // Experience section
         experience: {
             title: "Experiencia Laboral",
+            projectsLabel: "Proyectos destacados",
             job1: {
-                title: "Cloud & Backend Developer",
+                title: "Backend and Data Engineer",
                 company: "Mential Health Technologies",
                 period: "2025 - Presente",
-                description: "Diseño e implementación de soluciones en la nube centradas en la creación de APIs RESTful, automatización de procesos y gestión de datos. Desarrollo de microservicios desplegados en Google Cloud Platform. Colaboración puntual en el desarrollo de aplicaciones móviles nativas y tareas frontend."
+                summary: "Soluciones cloud y automatización para proporcionar servicios de salud digitales seguros.",
+                description: "Trabajo en plataformas de datos cloud, sistemas de IA y microservicios distribuidos: data lakes en BigQuery, orquestación de agentes inteligentes, APIs en Kotlin/Java y pipelines multimodales para texto, audio y señales de comportamiento. Lidero integraciones seguras, automatización CI/CD y observabilidad end-to-end en GCP, conectando decisiones clínicas con datos confiables y en tiempo real.",
+                projects: {
+                    project1: {
+                        title: "Arquitectura de Microservicios en Cloud para Procesamiento Clínico con IA",
+                        description: "Plataforma escalable desplegada en Google Cloud que integra múltiples microservicios para gestionar datos clínicos, autenticación y procesamiento mediante modelos de IA. Incluye servicios especializados para la validación y almacenamiento de datos, ejecución de trabajos en la nube y sincronización con estándares FHIR y Firestore.",
+                        tags: ["Microservicios", "Python", "Flask", "Java", "Express", "Cloud Run", "Cloud Functions", "Pub/Sub", "Firestore", "Firebase Auth", "Buckets", "FHIR"],
+                        ctaLabel: "Código Privado"
+                    },
+                    project2: {
+                        title: "API para Gestión Clínica con App Android Nativa",
+                        description: "Desarrollo de API segura para gestión de datos de pacientes con autenticación y almacenamiento en base de datos. La aplicación Android nativa sincroniza datos manuales y automáticos, usando mecanismos para mantener la conexión activa y la sincronización en tiempo real.",
+                        tags: ["API REST", "FastAPI", "Python", "Kotlin", "Android", "Firestore", "Firebase Auth"],
+                        ctaLabel: "Código Privado"
+                    },
+                    project3: {
+                        title: "Plataforma BigQuery Data Lake Automatizada",
+                        description: "Diseño de un data lake cloud-native en BigQuery con pipelines de ingestión, limpieza y estandarización automatizados usando SQL y Dataform, modelos analíticos gobernados, automatización CI/CD y monitoreo para insights confiables y repetibles.",
+                        tags: ["BigQuery", "Dataform", "SQL", "Data Lake", "Automatización", "CI/CD", "GCP"],
+                        ctaLabel: "Código Privado"
+                    }
+                }
             },
             job2: {
                 title: "Desarrollador de Videojuegos",
                 company: "Proyectos Personales y Colaboraciones",
                 period: "2023 - 2024",
+                summary: "Conceptualización y desarrollo de juegos móviles con Unity.",
                 description: "Creación de videojuegos para dispositivos móviles utilizando Unity. Participación en la etapa de concepto y desarrollo, en colaboración con varias empresas.",
-                viewPortfolio: "Ver Portfolio"
-            }
+                viewPortfolio: "Ver Portfolio",
+                ctaUrl: "https://keyduckstudios-portfolio.my.canva.site/mobile-casual-games",
+                placeholderText: "Consulta mi portfolio para ver ejemplos en detalle.",
+                ctaDescription: "Explora mi portfolio para ver ejemplos de videojuegos."
+            },
+            placeholder: "Selecciona un proyecto para ver los detalles."
         },
         // Education section
         education: {
             title: "Estudios",
             degree1: {
-                title: "Máster en Web Development",
+                title: "Master's in Web Application Development",
                 institution: "Neoland",
                 period: "2025",
-                description: "Especialización en desarrollo web moderno con tecnologías frontend y backend."
+                description: "Programa de desarrollo web full-stack centrado en tecnologías modernas de JavaScript: frontend (HTML, CSS, JavaScript, React) y backend (Node.js, Express, MongoDB), control de versiones, APIs, programación asíncrona y buenas prácticas con proyecto final full-stack."
             },
             degree2: {
-                title: "Grado en Desarrollo de Videojuegos",
+                title: "BSc in Computer Science with a Specialization in Game Development",
                 institution: "Universidad Complutense de Madrid",
                 period: "2020 - 2024",
-                description: "Formación completa en programación y desarrollo de software con especialización en videojuegos."
+                description: "Grado en Desarrollo de Videojuegos por la UCM: ingeniería informática de cuatro años combinando algoritmos, estructuras de datos, gráficos, sistemas operativos, redes, programación concurrente, IA, física y sistemas interactivos en tiempo real."
             },
             degree3: {
                 title: "Máster en Desarrollo de Videojuegos y Game Design",
                 institution: "Master D",
                 period: "2019 - 2020",
-                description: "Introducción al desarrollo de videojuegos y diseño de experiencias interactivas."
+                description: "Programa de game development y game design enfocado en buenas prácticas de arquitectura, optimización de rendimiento, diseño narrativo y construcción de experiencias interactivas complejas para múltiples plataformas."
             }
         },
         // Footer
@@ -148,6 +176,7 @@ const languages = {
         skills: {
             title: "Technical Skills",
             categories: {
+                data: "Data & Cloud",
                 backend: "Backend",
                 frontend: "Frontend",
                 devprod: "Development & Productivity",
@@ -158,16 +187,16 @@ const languages = {
         projects: {
             title: "Featured Projects",
             project1: {
-                title: "Cloud Microservices Architecture for Clinical Processing with AI",
-                description: "Scalable platform deployed on Google Cloud that integrates multiple microservices to manage clinical data, authentication, and processing through AI models. Includes specialized services for data validation and storage, cloud job execution, and synchronization with FHIR standards and Firestore. Uses technologies such as Cloud Run, Cloud Functions, Pub/Sub, Firestore, Firebase Auth, and storage buckets, ensuring high availability and security."
+                title: "Web Application for Teaching",
+                description: "Full-stack platform (NestJS, MongoDB, Next.js, TypeScript, JWT) where teachers build modular courses, manage student databases and track progress through inherited course/module/exercise structures."
             },
             project2: {
-                title: "Clinical Management API with Native Android App",
-                description: "Development of a secure API for patient data management with authentication and database storage. The native Android application synchronizes manual and automatic data, using mechanisms to maintain active connection and real-time synchronization."
-            },
-            project3: {
                 title: "Mobile Video Game with Social Features and Geopositioning",
                 description: "Development of a mobile video game with social features (ranking, friend system) and real-time location. Backend in Spring Boot with MongoDB database in the cloud, secure authentication, and multiple endpoints for static and dynamic data."
+            },
+            project3: {
+                title: "ChallengeMe · Fitness Social Platform",
+                description: "Social network for fitness challenges with multi-activity goals, social feed, and analytics dashboards (React 19 + Vite + Chart.js). Backend built with Express, MongoDB, JWT auth and Swagger docs, deployed to Render/Netlify."
             },
             project4: {
                 title: "3D Game Engine",
@@ -179,40 +208,67 @@ const languages = {
         // Experience section
         experience: {
             title: "Work Experience",
+            projectsLabel: "Highlighted projects",
             job1: {
-                title: "Cloud & Backend Developer",
+                title: "Backend and Data Engineer",
                 company: "Mential Health Technologies",
                 period: "2025 - Present",
-                description: "Design and implementation of cloud solutions focused on creating RESTful APIs, process automation, and data management. Development of microservices deployed on Google Cloud Platform. Occasional collaboration in native mobile application development and frontend tasks."
+                summary: "Cloud solutions and automation to deliver secure digital health services.",
+                description: "I lead cloud data platforms, AI orchestration and distributed microservices: BigQuery data lakes, intelligent agent workflows, Kotlin/Java APIs and multimodal pipelines for text, audio and behavioural signals. I drive secure integrations, CI/CD automation and observability on GCP so that clinical decisions always rely on trusted, real-time data.",
+                projects: {
+                    project1: {
+                        title: "Cloud Microservices Architecture for Clinical Processing with AI",
+                        description: "Scalable platform deployed on Google Cloud that integrates multiple microservices to manage clinical data, authentication, and processing through AI models. Includes specialized services for data validation and storage, cloud job execution, and synchronization with FHIR standards and Firestore.",
+                        tags: ["Microservices", "Python", "Flask", "Java", "Express", "Cloud Run", "Cloud Functions", "Pub/Sub", "Firestore", "Firebase Auth", "Buckets", "FHIR"],
+                        ctaLabel: "Private Code"
+                    },
+                    project2: {
+                        title: "Clinical Management API with Native Android App",
+                        description: "Secure API for patient data management with authentication and database storage. The native Android application synchronizes manual and automatic data, using mechanisms to maintain an active connection and real-time sync.",
+                        tags: ["REST API", "FastAPI", "Python", "Kotlin", "Android", "Firestore", "Firebase Auth"],
+                        ctaLabel: "Private Code"
+                    },
+                    project3: {
+                        title: "BigQuery Data Lake Automation Platform",
+                        description: "Designed a cloud-native BigQuery data lake with SQL/Dataform pipelines for ingestion, cleansing and orchestration, analytical models, governed semantics and CI/CD workflows that guarantee reliable, auditable insights.",
+                        tags: ["BigQuery", "Dataform", "SQL", "Data Lake", "Automation", "CI/CD", "GCP"],
+                        ctaLabel: "Private Code"
+                    }
+                }
             },
             job2: {
                 title: "Video Game Developer",
                 company: "Personal Projects and Collaborations",
                 period: "2023 - 2024",
+                summary: "Designing and building mobile games with Unity.",
                 description: "Creation of video games for mobile devices using Unity. Participation in the concept and development stage, in collaboration with various companies.",
-                viewPortfolio: "View Portfolio"
-            }
+                viewPortfolio: "View Portfolio",
+                ctaUrl: "https://keyduckstudios-portfolio.my.canva.site/mobile-casual-games",
+                placeholderText: "Check my portfolio to explore selected projects.",
+                ctaDescription: "Visit my portfolio to see mobile game examples."
+            },
+            placeholder: "Select a project to see the details."
         },
         // Education section
         education: {
             title: "Education",
             degree1: {
-                title: "Master's in Web Development",
+                title: "Master's in Web Application Development",
                 institution: "Neoland",
                 period: "2025",
-                description: "Specialization in modern web development with frontend and backend technologies."
+                description: "Full-stack web development program focused on modern JavaScript technologies. Covered frontend (HTML, CSS, JavaScript, React), backend (Node.js, Express, MongoDB), version control, APIs, async programming and engineering best practices, finishing with a full-stack capstone."
             },
             degree2: {
-                title: "Bachelor's in Video Game Development",
+                title: "BSc in Computer Science with a Specialization in Game Development",
                 institution: "Complutense University of Madrid",
                 period: "2020 - 2024",
-                description: "Complete training in programming and software development with specialization in video games."
+                description: "Four-year engineering program combining computer science, software engineering and game development: algorithms, data structures, computer graphics, operating systems, networking, multithreaded programming, testing, AI, physics simulation and real-time interactive systems."
             },
             degree3: {
                 title: "Master's in Video Game Development and Game Design",
                 institution: "Master D",
                 period: "2019 - 2020",
-                description: "Introduction to video game development and interactive experience design."
+                description: "Comprehensive game development and game design program focused on architecture best practices, performance optimization, narrative design, and building complex interactive experiences across platforms."
             }
         },
         // Footer
@@ -274,8 +330,8 @@ function updateNavigation(nav) {
     navLinks[0].textContent = nav.home;
     navLinks[1].textContent = nav.about;
     navLinks[2].textContent = nav.skills;
-    navLinks[3].textContent = nav.projects;
-    navLinks[4].textContent = nav.experience;
+    navLinks[3].textContent = nav.experience;
+    navLinks[4].textContent = nav.projects;
     navLinks[5].textContent = nav.education;
 }
 
@@ -305,7 +361,13 @@ function updateSkills(skills) {
     document.querySelector('#skills .section-title').textContent = skills.title;
     
     const skillCategories = document.querySelectorAll('#skills .category-title');
-    if (skillCategories.length >= 4) {
+    if (skillCategories.length >= 5) {
+        skillCategories[0].textContent = skills.categories.backend;
+        skillCategories[1].textContent = skills.categories.data;
+        skillCategories[2].textContent = skills.categories.frontend;
+        skillCategories[3].textContent = skills.categories.devprod;
+        skillCategories[4].textContent = skills.categories.games;
+    } else if (skillCategories.length >= 4) {
         skillCategories[0].textContent = skills.categories.backend;
         skillCategories[1].textContent = skills.categories.frontend;
         skillCategories[2].textContent = skills.categories.devprod;
@@ -317,40 +379,123 @@ function updateProjects(projects) {
     document.querySelector('#projects .section-title').textContent = projects.title;
     
     const projectCards = document.querySelectorAll('#projects .project-card');
-    projectCards[0].querySelector('.project-title').textContent = projects.project1.title;
-    projectCards[0].querySelector('.project-info p').textContent = projects.project1.description;
-    
-    projectCards[1].querySelector('.project-title').textContent = projects.project2.title;
-    projectCards[1].querySelector('.project-info p').textContent = projects.project2.description;
-    
-    projectCards[2].querySelector('.project-title').textContent = projects.project3.title;
-    projectCards[2].querySelector('.project-info p').textContent = projects.project3.description;
-    
-    projectCards[3].querySelector('.project-title').textContent = projects.project4.title;
-    projectCards[3].querySelector('.project-info p').textContent = projects.project4.description;
-    
-    // Actualizar botones
-    document.querySelectorAll('.btn-blocked').forEach(btn => {
-        btn.textContent = projects.privateCode;
+    const projectKeys = ['project1', 'project2', 'project3', 'project4'];
+
+    projectKeys.forEach((key, index) => {
+        const card = projectCards[index];
+        if (!card || !projects[key]) return;
+        card.querySelector('.project-title').textContent = projects[key].title;
+        card.querySelector('.project-info p').textContent = projects[key].description;
     });
     
-    document.querySelectorAll('.btn-github').forEach(btn => {
+    document.querySelectorAll('#projects .btn-github').forEach(btn => {
         btn.textContent = projects.viewOnGitHub;
     });
 }
 
 function updateExperience(experience) {
     document.querySelector('#experience .section-title').textContent = experience.title;
-    
-    const experienceCards = document.querySelectorAll('#experience .experience-card');
-    experienceCards[0].querySelector('h3').textContent = experience.job1.title;
-    experienceCards[0].querySelector('.company').textContent = experience.job1.company;
-    experienceCards[0].querySelector('p:not(.company)').textContent = experience.job1.description;
-    
-    experienceCards[1].querySelector('h3').textContent = experience.job2.title;
-    experienceCards[1].querySelector('.company').textContent = experience.job2.company;
-    experienceCards[1].querySelector('p:not(.company)').textContent = experience.job2.description;
-    experienceCards[1].querySelector('.btn-primary').textContent = experience.job2.viewPortfolio;
+
+    document.querySelectorAll('.experience-projects-title').forEach(title => {
+        title.textContent = experience.projectsLabel;
+    });
+
+    const experienceItems = document.querySelectorAll('.experience-item');
+    experienceItems.forEach(item => {
+        const key = item.dataset.experienceKey;
+        const data = experience[key];
+        if (!data) return;
+
+        const titleEl = item.querySelector('.experience-item-title');
+        if (titleEl) titleEl.textContent = data.title;
+
+        const companyEl = item.querySelector('.experience-company');
+        if (companyEl) companyEl.textContent = data.company;
+
+        const dateEl = item.querySelector('.experience-date');
+        if (dateEl) dateEl.textContent = data.period;
+
+        const summaryEl = item.querySelector('.experience-summary');
+        if (summaryEl && data.summary) summaryEl.textContent = data.summary;
+
+        const subtitleEl = item.querySelector('.experience-role-subtitle');
+        if (subtitleEl) {
+            if (data.subtitle) {
+                subtitleEl.textContent = data.subtitle;
+                subtitleEl.style.display = 'block';
+            } else {
+                subtitleEl.style.display = 'none';
+            }
+        }
+
+        const descriptionEl = item.querySelector('.experience-description');
+        if (descriptionEl) {
+            if (data.description) {
+                descriptionEl.textContent = data.description;
+                descriptionEl.style.display = 'block';
+            } else {
+                descriptionEl.style.display = 'none';
+            }
+        }
+
+    });
+
+    const detailCards = document.querySelectorAll('.experience-detail-card');
+    detailCards.forEach(card => {
+        const detailKey = card.dataset.projectDetail;
+        if (!detailKey) return;
+        const [jobKey, projectKey] = detailKey.split('.');
+        const jobData = experience[jobKey];
+        if (!jobData || !jobData.projects || !jobData.projects[projectKey]) return;
+        const project = jobData.projects[projectKey];
+
+        const titleEl = card.querySelector('.project-title');
+        if (titleEl) titleEl.textContent = project.title;
+
+        const descriptionEl = card.querySelector('.project-info p');
+        if (descriptionEl) descriptionEl.textContent = project.description;
+
+        const tagsContainer = card.querySelector('.project-tags-grid');
+        if (tagsContainer && project.tags) {
+            tagsContainer.innerHTML = '';
+            project.tags.forEach(tag => {
+                const tagEl = document.createElement('span');
+                tagEl.className = 'tag';
+                tagEl.textContent = tag;
+                tagsContainer.appendChild(tagEl);
+            });
+        }
+
+        const timelineLabel = document.querySelector(`.timeline-node[data-project-key="${projectKey}"] .timeline-label`);
+        if (timelineLabel) {
+            timelineLabel.textContent = project.title;
+        }
+    });
+
+    const generalPlaceholder = document.querySelector('.experience-detail-placeholder[data-placeholder-type="general"] p');
+    if (generalPlaceholder && experience.placeholder) {
+        generalPlaceholder.textContent = experience.placeholder;
+    }
+
+    const ctaPlaceholders = document.querySelectorAll('.experience-detail-placeholder[data-placeholder-type="cta"]');
+    ctaPlaceholders.forEach(placeholderEl => {
+        const jobKey = placeholderEl.dataset.placeholderJob;
+        const jobData = experience[jobKey];
+        if (!jobData) return;
+
+        const textEl = placeholderEl.querySelector('.experience-cta-text');
+        if (textEl && jobData.ctaDescription) {
+            textEl.textContent = jobData.ctaDescription;
+        }
+
+        const btnEl = placeholderEl.querySelector('.experience-cta-btn');
+        if (btnEl && jobData.viewPortfolio) {
+            btnEl.textContent = jobData.viewPortfolio;
+        }
+        if (btnEl && jobData.ctaUrl) {
+            btnEl.href = jobData.ctaUrl;
+        }
+    });
 }
 
 function updateEducation(education) {
@@ -396,6 +541,6 @@ function updateLanguageButton(currentLang) {
 
 // Inicializar idioma al cargar la página
 document.addEventListener('DOMContentLoaded', function() {
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'es';
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
     changeLanguage(savedLanguage);
 }); 

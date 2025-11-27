@@ -137,33 +137,19 @@
 
 
 .custom-skills-layout {
-    display: grid;
-    grid-template-areas:
-        "backend"
-        "row";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
 }
 
-.skill-backend {
-    grid-area: backend;
-    padding: 3.5rem 3rem 3rem 3rem;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-}
-
 .skills-row {
-    grid-area: row;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 2.5rem;
 }
 
-.skill-frontend, .skill-devprod, .skill-games {
+.skill-category {
     min-width: 0;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
-    font-size: 1rem;
 }
 
 .skill-level {
@@ -222,7 +208,7 @@
         gap: 2rem;
     }
     .skills-row {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
         gap: 2rem;
     }
     
@@ -315,9 +301,6 @@
     .skills-row {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    }
-    .skill-backend {
-        padding: 2.5rem 1.5rem 2rem 1.5rem;
     }
 }
 
