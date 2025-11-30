@@ -13,7 +13,7 @@ const languages = {
         hero: {
             greeting: "Soy",
             name: "Raúl Saavedra",
-            title: "Desarrollador Backend y Cloud",
+            title: "Ingeniero de Software y Data, especializado en Cloud",
             description: "Apasionado por la tecnología y lo que es capaz de hacer",
             viewProjects: "Ver Proyectos",
             aboutMe: "Sobre Mí"
@@ -45,20 +45,20 @@ const languages = {
         projects: {
             title: "Proyectos Destacados",
             project1: {
-                title: "Web Application for Teaching",
-                description: "Aplicación full-stack construida con NestJS, MongoDB, Next.js, TypeScript y JWT. Permite diseñar cursos modulares, gestionar bases de datos de alumnos y controlar el progreso mediante herencia estructurada de cursos, módulos y ejercicios."
+                title: "Plataforma Social de Fitness",
+                description: "Plataforma social para crear retos deportivos multi-actividad, compartir progreso y seguir métricas con dashboards (React 19 + Vite + Chart.js). Backend Express + MongoDB con JWT, Swagger y despliegue completo en Render/Netlify."
             },
             project2: {
-                title: "Videojuego Móvil Con Funciones Sociales y Geoposicionamiento",
-                description: "Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos."
+                title: "Aplicación Web para la Enseñanza",
+                description: "Aplicación full-stack construida con NestJS, MongoDB, Next.js, TypeScript y JWT. Permite diseñar cursos modulares, gestionar bases de datos de alumnos y controlar el progreso mediante herencia estructurada de cursos, módulos y ejercicios."
             },
             project3: {
-                title: "ChallengeMe · Fitness Social Platform",
-                description: "Plataforma social para crear retos deportivos multi-actividad, compartir publicaciones y seguir el progreso con visualizaciones (React 19 + Vite + Chart.js). Backend Express + MongoDB con JWT, Swagger y despliegue productivo en Render/Netlify."
-            },
-            project4: {
                 title: "Motor de Videojuegos 3D",
                 description: "Desarrollo desde cero de un motor de videojuegos con soporte para gráficos 2D/3D, físicas, audio y scripting. Implementado en C++ y LUA, incluyendo un juego funcional construido sobre esta arquitectura propia."
+            },
+            project4: {
+                title: "Videojuego Móvil Con Funciones Sociales y Geoposicionamiento",
+                description: "Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos."
             },
             privateCode: "Código Privado",
             viewOnGitHub: "Ver en GitHub"
@@ -155,7 +155,7 @@ const languages = {
         hero: {
             greeting: "I am",
             name: "Raúl Saavedra",
-            title: "Backend and Cloud Developer",
+            title: "Software and Data Engineer, specialized in Cloud",
             description: "Passionate about technology and what it's capable of doing",
             viewProjects: "View Projects",
             aboutMe: "About Me"
@@ -187,20 +187,20 @@ const languages = {
         projects: {
             title: "Featured Projects",
             project1: {
+                title: "Fitness Social Platform",
+                description: "Social platform for creating multi-activity fitness challenges, sharing progress, and tracking metrics through interactive dashboards (React 19 + Vite + Chart.js). Express + MongoDB backend with JWT, Swagger and full deployment on Render/Netlify."
+            },
+            project2: {
                 title: "Web Application for Teaching",
                 description: "Full-stack platform (NestJS, MongoDB, Next.js, TypeScript, JWT) where teachers build modular courses, manage student databases and track progress through inherited course/module/exercise structures."
             },
-            project2: {
-                title: "Mobile Video Game with Social Features and Geopositioning",
-                description: "Development of a mobile video game with social features (ranking, friend system) and real-time location. Backend in Spring Boot with MongoDB database in the cloud, secure authentication, and multiple endpoints for static and dynamic data."
-            },
             project3: {
-                title: "ChallengeMe · Fitness Social Platform",
-                description: "Social network for fitness challenges with multi-activity goals, social feed, and analytics dashboards (React 19 + Vite + Chart.js). Backend built with Express, MongoDB, JWT auth and Swagger docs, deployed to Render/Netlify."
-            },
-            project4: {
                 title: "3D Game Engine",
                 description: "Development from scratch of a game engine with support for 2D/3D graphics, physics, audio, and scripting. Implemented in C++ and LUA, including a functional game built on this own architecture."
+            },
+            project4: {
+                title: "Mobile Video Game with Social Features and Geopositioning",
+                description: "Development of a mobile video game with social features (ranking, friend system) and real-time location. Backend in Spring Boot with MongoDB database in the cloud, secure authentication, and multiple endpoints for static and dynamic data."
             },
             privateCode: "Private Code",
             viewOnGitHub: "View on GitHub"
@@ -379,6 +379,7 @@ function updateProjects(projects) {
     document.querySelector('#projects .section-title').textContent = projects.title;
     
     const projectCards = document.querySelectorAll('#projects .project-card');
+    // Orden real: project1, project2, project3, project4
     const projectKeys = ['project1', 'project2', 'project3', 'project4'];
 
     projectKeys.forEach((key, index) => {
