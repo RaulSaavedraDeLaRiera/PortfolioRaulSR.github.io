@@ -49,14 +49,18 @@ const languages = {
                 description: "Plataforma social para crear retos deportivos multi-actividad, compartir progreso y seguir métricas con dashboards (React 19 + Vite + Chart.js). Backend Express + MongoDB con JWT, Swagger y despliegue completo en Render/Netlify."
             },
             project2: {
+                title: "Medallion Fitness Pipeline",
+                description: "Portfolio fitness data lake construido con Dataform y BigQuery, implementando una arquitectura Medallion Bronze → Silver → Gold. Procesa eventos de usuario simulados y datos de entrenamiento con pipelines incrementales, verificaciones de calidad de datos y control de acceso basado en roles. Diseñado para mostrar patrones modernos de ingeniería de datos y conjuntos de datos listos para análisis."
+            },
+            project3: {
                 title: "Aplicación Web para la Enseñanza",
                 description: "Aplicación full-stack construida con NestJS, MongoDB, Next.js, TypeScript y JWT. Permite diseñar cursos modulares, gestionar bases de datos de alumnos y controlar el progreso mediante herencia estructurada de cursos, módulos y ejercicios."
             },
-            project3: {
+            project4: {
                 title: "Motor de Videojuegos 3D",
                 description: "Desarrollo desde cero de un motor de videojuegos con soporte para gráficos 2D/3D, físicas, audio y scripting. Implementado en C++ y LUA, incluyendo un juego funcional construido sobre esta arquitectura propia."
             },
-            project4: {
+            project5: {
                 title: "Videojuego Móvil Con Funciones Sociales y Geoposicionamiento",
                 description: "Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos."
             },
@@ -191,14 +195,18 @@ const languages = {
                 description: "Social platform for creating multi-activity fitness challenges, sharing progress, and tracking metrics through interactive dashboards (React 19 + Vite + Chart.js). Express + MongoDB backend with JWT, Swagger and full deployment on Render/Netlify."
             },
             project2: {
+                title: "Medallion Fitness Pipeline",
+                description: "Portfolio fitness data lake built with Dataform and BigQuery, implementing a Bronze → Silver → Gold Medallion Architecture. Processes simulated user events and workout data with incremental pipelines, data quality checks, and role-based access control. Designed to showcase modern data engineering patterns and analytics-ready datasets."
+            },
+            project3: {
                 title: "Web Application for Teaching",
                 description: "Full-stack platform (NestJS, MongoDB, Next.js, TypeScript, JWT) where teachers build modular courses, manage student databases and track progress through inherited course/module/exercise structures."
             },
-            project3: {
+            project4: {
                 title: "3D Game Engine",
                 description: "Development from scratch of a game engine with support for 2D/3D graphics, physics, audio, and scripting. Implemented in C++ and LUA, including a functional game built on this own architecture."
             },
-            project4: {
+            project5: {
                 title: "Mobile Video Game with Social Features and Geopositioning",
                 description: "Development of a mobile video game with social features (ranking, friend system) and real-time location. Backend in Spring Boot with MongoDB database in the cloud, secure authentication, and multiple endpoints for static and dynamic data."
             },
@@ -379,8 +387,7 @@ function updateProjects(projects) {
     document.querySelector('#projects .section-title').textContent = projects.title;
     
     const projectCards = document.querySelectorAll('#projects .project-card');
-    // Orden real: project1, project2, project3, project4
-    const projectKeys = ['project1', 'project2', 'project3', 'project4'];
+    const projectKeys = ['project1', 'project2', 'project3', 'project4', 'project5'];
 
     projectKeys.forEach((key, index) => {
         const card = projectCards[index];
