@@ -13,20 +13,22 @@ const languages = {
         hero: {
             greeting: "Soy",
             name: "Raúl Saavedra",
-            title: "Ingeniero de Software y Data, especializado en Cloud",
-            description: "Apasionado por la tecnología y lo que es capaz de hacer",
+            title: "Ingeniero backend y de datos · plataformas cloud, datos e IA",
+            description: "Diseño sistemas escalables donde datos, backend e inteligencia artificial trabajan juntos",
             viewProjects: "Ver Proyectos",
             aboutMe: "Sobre Mí"
         },
         // About section
         about: {
             title: "Sobre Mí",
-            paragraph1: "Desde pequeño siempre he preferido el ratón al balón. Cuando tuve que elegir a qué dedicarme supe que una pantalla y un teclado tenían que estar involucrados.",
-            paragraph2: "Comencé con un máster en desarrollo y diseño de videojuegos pero rápidamente me di cuenta de que se me quedaba corto, quería saber más cómo funcionaba, qué hacía la magia. Por eso estudié el grado de Informática con especialización en videojuegos en la UCM. Ahí descubrí que mi pasión iba más allá de los juegos: me fascinaba cómo los unos y ceros pueden dar forma a la tecnología que usamos cada día.",
-            paragraph3: "Con esta idea, completé un máster en desarrollo web y actualmente trabajo como desarrollador backend centrado en Cloud, donde pongo a prueba cada día lo que soy capaz de construir con código.",
+            paragraph1: "Soy ingeniero backend y de datos, enfocado en construir plataformas escalables, sistemas de datos y servicios impulsados por IA.",
+            paragraph2: "Mi trabajo cruza backend, plataformas de datos e inteligencia artificial: datos clínicos y analítica a escala en cloud y BigQuery; sistemas distribuidos y microservicios en Python, Kotlin y Java; pipelines multimodales que convierten texto, audio y señales de comportamiento en marcadores estructurados; capas agénticas y orquestación multi-agente para decisiones e intervenciones en tiempo casi real; arquitecturas orientadas a eventos y orquestación de flujos complejos; infraestructura en la nube, CI/CD y aislamiento de entornos con rigor operativo.",
+            paragraph3: "Uno de los retos que más me importa es la integridad de los datos en entornos sensibles: registros longitudinales de salud, evidencia del mundo real y flujos donde la calidad y la fiabilidad no son opcionales.",
+            paragraph4: "Disfruto llevar problemas técnicos difíciles a sistemas listos para producción, con bases de ingeniería sólidas y un uso consciente de la inteligencia artificial.",
+            paragraph5: "Abierto a conversar sobre arquitectura backend, plataformas de datos e IA en contextos regulados.",
             stats: {
                 years: "Años de Estudio",
-                projects: "Proyectos Completados",
+                projects: "Proyectos hechos",
                 technologies: "Tecnologías Dominadas"
             }
         },
@@ -36,6 +38,7 @@ const languages = {
             categories: {
                 data: "Data & Cloud",
                 backend: "Backend",
+                ai: "IA y sistemas",
                 frontend: "Frontend",
                 devprod: "Desarrollo y Productividad",
                 games: "Videojuegos"
@@ -45,22 +48,26 @@ const languages = {
         projects: {
             title: "Proyectos Destacados",
             project1: {
+                title: "Asistente multi-agente de dieta y salud (IA)",
+                description: "Asistente de salud multi-agente con Google ADK y FastAPI. Arquitectura con orquestador y agentes especializados (recomendaciones, estadísticas de usuario, seguridad de contenido). Límites configurables, capa de datos mock y persistencia de sesión opcional con Vertex AI."
+            },
+            project2: {
                 title: "Plataforma Social de Fitness",
                 description: "Plataforma social para crear retos deportivos multi-actividad, compartir progreso y seguir métricas con dashboards (React 19 + Vite + Chart.js). Backend Express + MongoDB con JWT, Swagger y despliegue completo en Render/Netlify."
             },
-            project2: {
+            project3: {
                 title: "Medallion Fitness Pipeline",
                 description: "Portfolio fitness data lake construido con Dataform y BigQuery, implementando una arquitectura Medallion Bronze → Silver → Gold. Procesa eventos de usuario simulados y datos de entrenamiento con pipelines incrementales, verificaciones de calidad de datos y control de acceso basado en roles. Diseñado para mostrar patrones modernos de ingeniería de datos y conjuntos de datos listos para análisis."
             },
-            project3: {
+            project4: {
                 title: "Aplicación Web para la Enseñanza",
                 description: "Aplicación full-stack construida con NestJS, MongoDB, Next.js, TypeScript y JWT. Permite diseñar cursos modulares, gestionar bases de datos de alumnos y controlar el progreso mediante herencia estructurada de cursos, módulos y ejercicios."
             },
-            project4: {
+            project5: {
                 title: "Motor de Videojuegos 3D",
                 description: "Desarrollo desde cero de un motor de videojuegos con soporte para gráficos 2D/3D, físicas, audio y scripting. Implementado en C++ y LUA, incluyendo un juego funcional construido sobre esta arquitectura propia."
             },
-            project5: {
+            project6: {
                 title: "Videojuego Móvil Con Funciones Sociales y Geoposicionamiento",
                 description: "Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos."
             },
@@ -71,10 +78,31 @@ const languages = {
         experience: {
             title: "Experiencia Laboral",
             projectsLabel: "Proyectos destacados",
+            job0: {
+                title: "Chief Technology Officer (CTO)",
+                company: "Mential Health Technologies",
+                period: "mar. 2026 - Presente",
+                summary: "Liderazgo técnico, arquitectura y ejecución hands-on: datos clínicos a escala, IA y backend en GCP.",
+                description: "",
+                projects: {
+                    overview: {
+                        title: "Chief Technology Officer (CTO)",
+                        intro: "",
+                        bullets: [
+                            "Arquitectura de plataforma end-to-end: backend, datos, pipelines de IA e infraestructura en la nube.",
+                            "Plataforma cloud-native de datos clínicos en Google Cloud / BigQuery (ingesta, transformación, analítica; 5M+ registros).",
+                            "Pipelines de IA multimodal y capa agéntica multi-agente para orquestación de decisiones e intervenciones en tiempo casi real.",
+                            "Microservicios y arquitectura orientada a eventos en Python, Kotlin y Java; CI/CD, entornos aislados y decisiones técnicas de producto en equipo reducido."
+                        ],
+                        techStack: "Python · Kotlin · Java · FastAPI · BigQuery · GCP · IA / agentes · microservicios · event-driven",
+                        tags: ["Python", "Kotlin", "Java", "FastAPI", "BigQuery", "GCP", "IA agéntica", "Microservicios", "Event-Driven"]
+                    }
+                }
+            },
             job1: {
                 title: "Backend and Data Engineer",
                 company: "Mential Health Technologies",
-                period: "2025 - Presente",
+                period: "2025 - mar. 2026",
                 summary: "Soluciones cloud y automatización para proporcionar servicios de salud digitales seguros.",
                 description: "Trabajo en plataformas de datos cloud, sistemas de IA y microservicios distribuidos: data lakes en BigQuery, orquestación de agentes inteligentes, APIs en Kotlin/Java y pipelines multimodales para texto, audio y señales de comportamiento. Lidero integraciones seguras, automatización CI/CD y observabilidad end-to-end en GCP, conectando decisiones clínicas con datos confiables y en tiempo real.",
                 projects: {
@@ -159,20 +187,22 @@ const languages = {
         hero: {
             greeting: "I am",
             name: "Raúl Saavedra",
-            title: "Software and Data Engineer, specialized in Cloud",
-            description: "Passionate about technology and what it's capable of doing",
+            title: "Backend & data engineer · cloud platforms, data, and AI",
+            description: "I build scalable systems where data, backend, and intelligence reinforce each other",
             viewProjects: "View Projects",
             aboutMe: "About Me"
         },
         // About section
         about: {
             title: "About Me",
-            paragraph1: "Since I was little, I've always preferred the mouse to the ball. When I had to choose what to dedicate myself to, I knew that a screen and a keyboard had to be involved.",
-            paragraph2: "I started with a master's degree in game development and design, but I quickly realized it wasn't enough, I wanted to know more about how it worked, what made the magic happen. That's why I studied Computer Science with a specialization in video games at UCM. There I discovered that my passion went beyond games: I was fascinated by how ones and zeros can shape the technology we use every day.",
-            paragraph3: "With this idea, I completed a master's degree in web development and currently work as a backend developer focused on Cloud, where I test every day what I'm capable of building with code.",
+            paragraph1: "I'm a backend and data engineer focused on building scalable platforms, data systems, and AI-driven services.",
+            paragraph2: "My work sits at the intersection of backend systems, data platforms, and AI: clinical-scale data and analytics on cloud and BigQuery; distributed backends and microservices in Python, Kotlin, and Java; multimodal pipelines turning behavioral, text, and session data into structured clinical markers; agentic layers and multi-agent orchestration for decisions and near-real-time interventions; event-driven architectures and workflow orchestration; cloud infrastructure, CI/CD, and disciplined environment isolation.",
+            paragraph3: "A core challenge I care deeply about is data integrity in sensitive domains—longitudinal health records, real-world evidence, and workflows where quality and reliability are non-negotiable.",
+            paragraph4: "I enjoy turning hard technical problems into production-grade systems that pair strong engineering foundations with thoughtful use of AI.",
+            paragraph5: "Open to conversations about backend architecture, data platforms, and AI in regulated environments.",
             stats: {
                 years: "Years of Study",
-                projects: "Completed Projects",
+                projects: "Projects built",
                 technologies: "Mastered Technologies"
             }
         },
@@ -182,6 +212,7 @@ const languages = {
             categories: {
                 data: "Data & Cloud",
                 backend: "Backend",
+                ai: "AI & systems",
                 frontend: "Frontend",
                 devprod: "Development & Productivity",
                 games: "Video Games"
@@ -191,22 +222,26 @@ const languages = {
         projects: {
             title: "Featured Projects",
             project1: {
+                title: "AI Multi-Agent Diet & Health Assistant",
+                description: "Multi-agent AI health assistant built with Google ADK and FastAPI. Orchestrator-based architecture with specialized backend agents for recommendations, user stats, and content safety. Configurable limits, mock data abstraction, and optional session persistence via Vertex AI."
+            },
+            project2: {
                 title: "Fitness Social Platform",
                 description: "Social platform for creating multi-activity fitness challenges, sharing progress, and tracking metrics through interactive dashboards (React 19 + Vite + Chart.js). Express + MongoDB backend with JWT, Swagger and full deployment on Render/Netlify."
             },
-            project2: {
+            project3: {
                 title: "Medallion Fitness Pipeline",
                 description: "Portfolio fitness data lake built with Dataform and BigQuery, implementing a Bronze → Silver → Gold Medallion Architecture. Processes simulated user events and workout data with incremental pipelines, data quality checks, and role-based access control. Designed to showcase modern data engineering patterns and analytics-ready datasets."
             },
-            project3: {
+            project4: {
                 title: "Web Application for Teaching",
                 description: "Full-stack platform (NestJS, MongoDB, Next.js, TypeScript, JWT) where teachers build modular courses, manage student databases and track progress through inherited course/module/exercise structures."
             },
-            project4: {
+            project5: {
                 title: "3D Game Engine",
                 description: "Development from scratch of a game engine with support for 2D/3D graphics, physics, audio, and scripting. Implemented in C++ and LUA, including a functional game built on this own architecture."
             },
-            project5: {
+            project6: {
                 title: "Mobile Video Game with Social Features and Geopositioning",
                 description: "Development of a mobile video game with social features (ranking, friend system) and real-time location. Backend in Spring Boot with MongoDB database in the cloud, secure authentication, and multiple endpoints for static and dynamic data."
             },
@@ -217,12 +252,33 @@ const languages = {
         experience: {
             title: "Work Experience",
             projectsLabel: "Highlighted projects",
+            job0: {
+                title: "Chief Technology Officer (CTO)",
+                company: "Mential Health Technologies",
+                period: "Mar 2026 - Present",
+                summary: "Technical leadership, architecture, and hands-on delivery: clinical-scale data, AI, and backend on GCP.",
+                description: "",
+                projects: {
+                    overview: {
+                        title: "Chief Technology Officer (CTO)",
+                        intro: "",
+                        bullets: [
+                            "End-to-end platform architecture: backend, data, AI pipelines, and cloud infrastructure.",
+                            "Cloud-native clinical data platform on Google Cloud / BigQuery—ingestion, transformation, analytics; 5M+ records.",
+                            "Multimodal AI pipelines and an agentic multi-agent layer for decision orchestration and near-real-time interventions.",
+                            "Event-driven microservices in Python, Kotlin, and Java; CI/CD, isolated environments, and product-facing technical leadership in a small team."
+                        ],
+                        techStack: "Python · Kotlin · Java · FastAPI · BigQuery · GCP · AI / agents · microservices · event-driven",
+                        tags: ["Python", "Kotlin", "Java", "FastAPI", "BigQuery", "GCP", "Agentic AI", "Microservices", "Event-Driven"]
+                    }
+                }
+            },
             job1: {
                 title: "Backend and Data Engineer",
                 company: "Mential Health Technologies",
-                period: "2025 - Present",
+                period: "2025 - Mar 2026",
                 summary: "Cloud solutions and automation to deliver secure digital health services.",
-                description: "I lead cloud data platforms, AI orchestration and distributed microservices: BigQuery data lakes, intelligent agent workflows, Kotlin/Java APIs and multimodal pipelines for text, audio and behavioural signals. I drive secure integrations, CI/CD automation and observability on GCP so that clinical decisions always rely on trusted, real-time data.",
+                description: "I worked on cloud data platforms, AI systems and distributed microservices: BigQuery data lakes, intelligent agent workflows, Kotlin/Java APIs and multimodal pipelines for text, audio and behavioural signals. I drove secure integrations, CI/CD automation and observability on GCP so clinical decisions could rely on trusted, real-time data.",
                 projects: {
                     project1: {
                         title: "Cloud Microservices Architecture for Clinical Processing with AI",
@@ -355,9 +411,21 @@ function updateHero(hero) {
 function updateAbout(about) {
     document.querySelector('#about .section-title').textContent = about.title;
     const paragraphs = document.querySelectorAll('#about .about-text p');
-    paragraphs[0].textContent = about.paragraph1;
-    paragraphs[1].textContent = about.paragraph2;
-    paragraphs[2].textContent = about.paragraph3;
+    const texts = about.paragraphs || [
+        about.paragraph1,
+        about.paragraph2,
+        about.paragraph3,
+        about.paragraph4,
+        about.paragraph5
+    ].filter(Boolean);
+    paragraphs.forEach((p, i) => {
+        if (texts[i]) {
+            p.textContent = texts[i];
+            p.style.display = '';
+        } else {
+            p.style.display = 'none';
+        }
+    });
     
     const stats = document.querySelectorAll('#about .stat-item p');
     stats[0].textContent = about.stats.years;
@@ -369,7 +437,14 @@ function updateSkills(skills) {
     document.querySelector('#skills .section-title').textContent = skills.title;
     
     const skillCategories = document.querySelectorAll('#skills .category-title');
-    if (skillCategories.length >= 5) {
+    if (skillCategories.length >= 6) {
+        skillCategories[0].textContent = skills.categories.backend;
+        skillCategories[1].textContent = skills.categories.data;
+        skillCategories[2].textContent = skills.categories.ai;
+        skillCategories[3].textContent = skills.categories.frontend;
+        skillCategories[4].textContent = skills.categories.devprod;
+        skillCategories[5].textContent = skills.categories.games;
+    } else if (skillCategories.length >= 5) {
         skillCategories[0].textContent = skills.categories.backend;
         skillCategories[1].textContent = skills.categories.data;
         skillCategories[2].textContent = skills.categories.frontend;
@@ -387,7 +462,7 @@ function updateProjects(projects) {
     document.querySelector('#projects .section-title').textContent = projects.title;
     
     const projectCards = document.querySelectorAll('#projects .project-card');
-    const projectKeys = ['project1', 'project2', 'project3', 'project4', 'project5'];
+    const projectKeys = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
     projectKeys.forEach((key, index) => {
         const card = projectCards[index];
@@ -460,8 +535,31 @@ function updateExperience(experience) {
         const titleEl = card.querySelector('.project-title');
         if (titleEl) titleEl.textContent = project.title;
 
-        const descriptionEl = card.querySelector('.project-info p');
-        if (descriptionEl) descriptionEl.textContent = project.description;
+        const introEl = card.querySelector('.experience-detail-intro');
+        const bulletsEl = card.querySelector('.experience-bullets');
+        const techEl = card.querySelector('.experience-detail-tech');
+        const descriptionEl = card.querySelector('.project-info p:not(.experience-detail-intro):not(.experience-detail-tech)');
+
+        if (introEl && project.intro !== undefined) {
+            introEl.textContent = project.intro;
+            introEl.style.display = project.intro ? 'block' : 'none';
+        }
+        if (bulletsEl && project.bullets) {
+            bulletsEl.innerHTML = '';
+            project.bullets.forEach(text => {
+                const li = document.createElement('li');
+                li.textContent = text;
+                bulletsEl.appendChild(li);
+            });
+            bulletsEl.style.display = project.bullets.length ? 'block' : 'none';
+        }
+        if (techEl && project.techStack !== undefined) {
+            techEl.textContent = project.techStack;
+            techEl.style.display = project.techStack ? 'block' : 'none';
+        }
+        if (descriptionEl && project.description !== undefined) {
+            descriptionEl.textContent = project.description;
+        }
 
         const tagsContainer = card.querySelector('.project-tags-grid');
         if (tagsContainer && project.tags) {

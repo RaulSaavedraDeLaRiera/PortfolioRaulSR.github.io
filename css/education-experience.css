@@ -192,6 +192,25 @@
     line-height: 1.6;
 }
 
+.experience-detail-card .project-info .experience-detail-intro,
+.experience-detail-card .project-info .experience-detail-tech {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.experience-detail-card .experience-bullets {
+    margin: 0.5rem 0 1.25rem 1.6rem;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+}
+
+.experience-detail-card .experience-bullets li {
+    margin-bottom: 0.45rem;
+}
+
 .experience-detail-card.active {
     display: block;
 }
