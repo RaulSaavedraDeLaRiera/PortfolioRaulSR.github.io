@@ -64,10 +64,14 @@ const languages = {
                 description: "Aplicación full-stack construida con NestJS, MongoDB, Next.js, TypeScript y JWT. Permite diseñar cursos modulares, gestionar bases de datos de alumnos y controlar el progreso mediante herencia estructurada de cursos, módulos y ejercicios."
             },
             project5: {
+                title: "Link Shortener Serverless en AWS",
+                description: "Acortador de URLs fullstack desplegado sobre arquitectura serverless en AWS. Frontend React servido desde S3 + CloudFront, API REST con API Gateway v2 y autenticación JWT con Cognito. Backend con cuatro funciones Lambda en Node.js y DynamoDB como base de datos NoSQL. Toda la infraestructura definida como código con Terraform."
+            },
+            project6: {
                 title: "Motor de Videojuegos 3D",
                 description: "Desarrollo desde cero de un motor de videojuegos con soporte para gráficos 2D/3D, físicas, audio y scripting. Implementado en C++ y LUA, incluyendo un juego funcional construido sobre esta arquitectura propia."
             },
-            project6: {
+            project7: {
                 title: "Videojuego Móvil Con Funciones Sociales y Geoposicionamiento",
                 description: "Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos."
             },
@@ -170,7 +174,7 @@ const languages = {
             subject: "Asunto",
             message: "Mensaje",
             sendMessageBtn: "Enviar Mensaje",
-            copyright: "© 2025 Raúl Saavedra"
+            copyright: "© 2026 Raul Saavedra"
         }
     },
     en: {
@@ -238,10 +242,14 @@ const languages = {
                 description: "Full-stack platform (NestJS, MongoDB, Next.js, TypeScript, JWT) where teachers build modular courses, manage student databases and track progress through inherited course/module/exercise structures."
             },
             project5: {
+                title: "Serverless Link Shortener on AWS",
+                description: "Full-stack URL shortener deployed on a serverless AWS architecture. React frontend served from S3 + CloudFront, REST API via API Gateway v2, JWT authentication with Cognito, four Node.js Lambda functions, and DynamoDB as the NoSQL database. All infrastructure defined as code with Terraform."
+            },
+            project6: {
                 title: "3D Game Engine",
                 description: "Development from scratch of a game engine with support for 2D/3D graphics, physics, audio, and scripting. Implemented in C++ and LUA, including a functional game built on this own architecture."
             },
-            project6: {
+            project7: {
                 title: "Mobile Video Game with Social Features and Geopositioning",
                 description: "Development of a mobile video game with social features (ranking, friend system) and real-time location. Backend in Spring Boot with MongoDB database in the cloud, secure authentication, and multiple endpoints for static and dynamic data."
             },
@@ -344,7 +352,7 @@ const languages = {
             subject: "Subject",
             message: "Message",
             sendMessageBtn: "Send Message",
-            copyright: "© 2025 Raúl Saavedra"
+            copyright: "© 2026 Raul Saavedra"
         }
     }
 };
@@ -462,7 +470,7 @@ function updateProjects(projects) {
     document.querySelector('#projects .section-title').textContent = projects.title;
     
     const projectCards = document.querySelectorAll('#projects .project-card');
-    const projectKeys = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
+    const projectKeys = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6', 'project7'];
 
     projectKeys.forEach((key, index) => {
         const card = projectCards[index];
