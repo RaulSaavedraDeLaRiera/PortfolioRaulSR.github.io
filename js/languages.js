@@ -71,10 +71,6 @@ const languages = {
                 title: "Motor de Videojuegos 3D",
                 description: "Desarrollo desde cero de un motor de videojuegos con soporte para gráficos 2D/3D, físicas, audio y scripting. Implementado en C++ y LUA, incluyendo un juego funcional construido sobre esta arquitectura propia."
             },
-            project7: {
-                title: "Videojuego Móvil Con Funciones Sociales y Geoposicionamiento",
-                description: "Desarrollo de un videojuego móvil con funciones sociales (ranking, sistema de amigos) y localización en tiempo real. Backend en Spring Boot con base de datos MongoDB en la nube, autenticación segura y múltiples endpoints para datos estáticos y dinámicos."
-            },
             privateCode: "Código Privado",
             viewOnGitHub: "Ver en GitHub"
         },
@@ -248,10 +244,6 @@ const languages = {
             project6: {
                 title: "3D Game Engine",
                 description: "Development from scratch of a game engine with support for 2D/3D graphics, physics, audio, and scripting. Implemented in C++ and LUA, including a functional game built on this own architecture."
-            },
-            project7: {
-                title: "Mobile Video Game with Social Features and Geopositioning",
-                description: "Development of a mobile video game with social features (ranking, friend system) and real-time location. Backend in Spring Boot with MongoDB database in the cloud, secure authentication, and multiple endpoints for static and dynamic data."
             },
             privateCode: "Private Code",
             viewOnGitHub: "View on GitHub"
@@ -470,7 +462,7 @@ function updateProjects(projects) {
     document.querySelector('#projects .section-title').textContent = projects.title;
     
     const projectCards = document.querySelectorAll('#projects .project-card');
-    const projectKeys = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6', 'project7'];
+    const projectKeys = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
     projectKeys.forEach((key, index) => {
         const card = projectCards[index];
