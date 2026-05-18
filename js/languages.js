@@ -94,7 +94,7 @@ const languages = {
                             "Pipelines de IA multimodal y capa agéntica multi-agente para orquestación de decisiones e intervenciones en tiempo casi real.",
                             "Microservicios y arquitectura orientada a eventos en Python, Kotlin y Java; CI/CD, entornos aislados y decisiones técnicas de producto en equipo reducido."
                         ],
-                        techStack: "Python · Kotlin · Java · FastAPI · BigQuery · GCP · IA / agentes · microservicios · event-driven",
+                        techStack: "",
                         tags: ["Python", "Kotlin", "Java", "FastAPI", "BigQuery", "GCP", "IA agéntica", "Microservicios", "Event-Driven"]
                     }
                 }
@@ -268,7 +268,7 @@ const languages = {
                             "Multimodal AI pipelines and an agentic multi-agent layer for decision orchestration and near-real-time interventions.",
                             "Event-driven microservices in Python, Kotlin, and Java; CI/CD, isolated environments, and product-facing technical leadership in a small team."
                         ],
-                        techStack: "Python · Kotlin · Java · FastAPI · BigQuery · GCP · AI / agents · microservices · event-driven",
+                        techStack: "",
                         tags: ["Python", "Kotlin", "Java", "FastAPI", "BigQuery", "GCP", "Agentic AI", "Microservices", "Event-Driven"]
                     }
                 }
