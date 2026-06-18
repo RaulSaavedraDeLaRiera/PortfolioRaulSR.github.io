@@ -111,6 +111,8 @@
                             <h3 class="category-title">Backend</h3>
                             <div class="skills-list">
                                 <div class="skill-item"><span class="skill-name">Python</span><span class="skill-level">Advanced</span></div>
+                                <div class="skill-item"><span class="skill-name">TypeScript</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">SQL</span><span class="skill-level">Advanced</span></div>
                                 <div class="skill-item"><span class="skill-name">FastAPI</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">Flask</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">Java</span><span class="skill-level">Intermediate</span></div>
@@ -145,7 +147,9 @@
                                 <div class="skill-item"><span class="skill-name">DuckDB</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">dbt</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">Apache Airflow</span><span class="skill-level">Intermediate</span></div>
-                                <div class="skill-item"><span class="skill-name">MCP</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Docker</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">CI/CD</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">FHIR R4</span><span class="skill-level">Intermediate</span></div>
                             </div>
                         </div>
                         <div class="skill-category skill-ai" data-aos="fade-up" data-aos-delay="120">
@@ -157,8 +161,9 @@
                                 <div class="skill-item"><span class="skill-name">Multi-Agent Orchestration</span><span class="skill-level">Advanced</span></div>
                                 <div class="skill-item"><span class="skill-name">Agent Tools &amp; Delegation</span><span class="skill-level">Advanced</span></div>
                                 <div class="skill-item"><span class="skill-name">Vertex AI (Sessions)</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Gemini</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">MCP Servers</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">AI Safety &amp; Content Review</span><span class="skill-level">Intermediate</span></div>
-                                <div class="skill-item"><span class="skill-name">Configurable AI Limits</span><span class="skill-level">Intermediate</span></div>
                             </div>
                         </div>
                     </div>
@@ -178,12 +183,13 @@
                         <div class="skill-category skill-devprod" data-aos="fade-up" data-aos-delay="300">
                             <h3 class="category-title">Desarrollo y Productividad</h3>
                             <div class="skills-list">
+                                <div class="skill-item"><span class="skill-name">SOLID</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Hexagonal Architecture</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Event-Driven Architecture</span><span class="skill-level">Intermediate</span></div>
                                 <div class="skill-item"><span class="skill-name">Terraform</span><span class="skill-level">Beginner</span></div>
                                 <div class="skill-item"><span class="skill-name">Git</span><span class="skill-level">Intermediate</span></div>
-                                <div class="skill-item"><span class="skill-name">GitHub</span><span class="skill-level">Intermediate</span></div>
-                                <div class="skill-item"><span class="skill-name">Agile</span></div>
-                                <div class="skill-item"><span class="skill-name">Scrum</span></div>
-                                <div class="skill-item"><span class="skill-name">VS Code</span></div>
+                                <div class="skill-item"><span class="skill-name">Jest</span><span class="skill-level">Intermediate</span></div>
+                                <div class="skill-item"><span class="skill-name">Agile / Scrum</span></div>
                             </div>
                         </div>
                         <div class="skill-category skill-games" data-aos="fade-up" data-aos-delay="400">
@@ -394,7 +400,31 @@
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">Proyectos Destacados</h2>
                 <div class="projects-grid">
+                    <!-- NYC Taxi Data Platform -->
                     <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="project-title">NYC Taxi Local Data Platform + MCP</h3>
+                        <div class="project-body-horizontal">
+                            <div class="project-info">
+                                <p>
+                                    Plataforma de datos local end-to-end sobre datos públicos de NYC Yellow Taxi. Arquitectura Medallion con dbt y DuckDB, orquestación mensual con Airflow, dashboards en Metabase y servidor MCP con text-to-SQL vía Claude Haiku para consultas en lenguaje natural. Sin coste cloud.
+                                </p>
+                            </div>
+                            <div class="project-tags-grid">
+                                <span class="tag">DuckDB</span>
+                                <span class="tag">dbt</span>
+                                <span class="tag">Apache Airflow</span>
+                                <span class="tag">Metabase</span>
+                                <span class="tag">MCP</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Text-to-SQL</span>
+                            </div>
+                        </div>
+                        <div class="project-btn-bottom">
+                            <a href="https://github.com/RaulSaavedraDeLaRiera/nyc-taxi-data-platform-mcp" target="_blank" class="btn btn-github">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <!-- Health Assistant -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                         <h3 class="project-title">Asistente multi-agente de dieta y salud (IA)</h3>
                         <div class="project-body-horizontal">
                             <div class="project-info">
@@ -415,7 +445,29 @@
                             <a href="https://github.com/RaulSaavedraDeLaRiera/Health-Assistant-Portfolio" target="_blank" class="btn btn-github">Ver en GitHub</a>
                         </div>
                     </div>
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Medallion Pipeline -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="project-title">Medallion Fitness Pipeline</h3>
+                        <div class="project-body-horizontal">
+                            <div class="project-info">
+                                <p>
+                                    Portfolio fitness data lake construido con Dataform y BigQuery, implementando una arquitectura Medallion Bronze → Silver → Gold. Procesa eventos de usuario simulados y datos de entrenamiento con pipelines incrementales, verificaciones de calidad de datos y control de acceso basado en roles. Diseñado para mostrar patrones modernos de ingeniería de datos y conjuntos de datos listos para análisis.
+                                </p>
+                            </div>
+                            <div class="project-tags-grid">
+                                <span class="tag">Dataform</span>
+                                <span class="tag">BigQuery</span>
+                                <span class="tag">GCP</span>
+                                <span class="tag">Data Lake</span>
+                                <span class="tag">Medallion Architecture</span>
+                            </div>
+                        </div>
+                        <div class="project-btn-bottom">
+                            <a href="https://github.com/RaulSaavedraDeLaRiera/Medallion-Fitness-Pipeline" target="_blank" class="btn btn-github">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <!-- ChallengeMe -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                         <h3 class="project-title">Plataforma Social de Fitness</h3>
                         <div class="project-body-horizontal">
                             <div class="project-info">
@@ -437,27 +489,7 @@
                             <a href="https://github.com/RaulSaavedraDeLaRiera/ChallengeMe" target="_blank" class="btn btn-github">Ver en GitHub</a>
                         </div>
                     </div>
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                        <h3 class="project-title">Medallion Fitness Pipeline</h3>
-                        <div class="project-body-horizontal">
-                            <div class="project-info">
-                                <p>
-                                    Portfolio fitness data lake construido con Dataform y BigQuery, implementando una arquitectura Medallion Bronze → Silver → Gold. Procesa eventos de usuario simulados y datos de entrenamiento con pipelines incrementales, verificaciones de calidad de datos y control de acceso basado en roles. Diseñado para mostrar patrones modernos de ingeniería de datos y conjuntos de datos listos para análisis.
-                                </p>
-                            </div>
-                            <div class="project-tags-grid">
-                                <span class="tag">Dataform</span>
-                                <span class="tag">BigQuery</span>
-                                <span class="tag">GCP</span>
-                                <span class="tag">Data Lake</span>
-                                <span class="tag">Medallion Architecture</span>
-                            </div>
-                        </div>
-                        <div class="project-btn-bottom">
-                            <a href="https://github.com/RaulSaavedraDeLaRiera/Medallion-Fitness-Pipeline" target="_blank" class="btn btn-github">Ver en GitHub</a>
-                        </div>
-                    </div>
-                    <!-- Proyecto: Link Shortener AWS -->
+                    <!-- Link Shortener AWS -->
                     <div class="project-card" data-aos="fade-up" data-aos-delay="500">
                         <h3 class="project-title">Link Shortener Serverless en AWS</h3>
                         <div class="project-body-horizontal">
@@ -480,30 +512,7 @@
                             <a href="https://github.com/RaulSaavedraDeLaRiera/Link-Shortener" target="_blank" class="btn btn-github">Ver en GitHub</a>
                         </div>
                     </div>
-                    <!-- Proyecto: NYC Taxi Data Platform -->
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="525">
-                        <h3 class="project-title">NYC Taxi Local Data Platform + MCP</h3>
-                        <div class="project-body-horizontal">
-                            <div class="project-info">
-                                <p>
-                                    Plataforma de datos local end-to-end sobre datos públicos de NYC Yellow Taxi. Arquitectura Medallion con dbt y DuckDB, orquestación mensual con Airflow, dashboards en Metabase y servidor MCP con text-to-SQL vía Claude Haiku para consultas en lenguaje natural. Sin coste cloud.
-                                </p>
-                            </div>
-                            <div class="project-tags-grid">
-                                <span class="tag">DuckDB</span>
-                                <span class="tag">dbt</span>
-                                <span class="tag">Apache Airflow</span>
-                                <span class="tag">Metabase</span>
-                                <span class="tag">MCP</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">Text-to-SQL</span>
-                            </div>
-                        </div>
-                        <div class="project-btn-bottom">
-                            <a href="https://github.com/RaulSaavedraDeLaRiera/nyc-taxi-data-platform-mcp" target="_blank" class="btn btn-github">Ver en GitHub</a>
-                        </div>
-                    </div>
-                    <!-- Proyecto: Motor de videojuegos -->
+                    <!-- Motor de videojuegos -->
                     <div class="project-card" data-aos="fade-up" data-aos-delay="550">
                         <h3 class="project-title">Motor de Videojuegos 3D</h3>
                         <div class="project-body-horizontal">

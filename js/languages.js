@@ -48,24 +48,24 @@ const languages = {
         projects: {
             title: "Proyectos Destacados",
             project1: {
-                title: "Asistente multi-agente de dieta y salud (IA)",
-                description: "Asistente de salud multi-agente con Google ADK y FastAPI. Arquitectura con orquestador y agentes especializados (recomendaciones, estadísticas de usuario, seguridad de contenido). Límites configurables, capa de datos mock y persistencia de sesión opcional con Vertex AI."
+                title: "NYC Taxi Local Data Platform + MCP",
+                description: "Plataforma de datos local end-to-end sobre datos públicos de NYC Yellow Taxi. Arquitectura Medallion con dbt y DuckDB, orquestación mensual con Airflow, dashboards en Metabase y servidor MCP con text-to-SQL vía Claude Haiku para consultas en lenguaje natural. Sin coste cloud."
             },
             project2: {
-                title: "Plataforma Social de Fitness",
-                description: "Plataforma social para crear retos deportivos multi-actividad, compartir progreso y seguir métricas con dashboards (React 19 + Vite + Chart.js). Backend Express + MongoDB con JWT, Swagger y despliegue completo en Render/Netlify."
+                title: "Asistente multi-agente de dieta y salud (IA)",
+                description: "Asistente de salud multi-agente con Google ADK y FastAPI. Arquitectura con orquestador y agentes especializados (recomendaciones, estadísticas de usuario, seguridad de contenido). Límites configurables, capa de datos mock y persistencia de sesión opcional con Vertex AI."
             },
             project3: {
                 title: "Medallion Fitness Pipeline",
                 description: "Portfolio fitness data lake construido con Dataform y BigQuery, implementando una arquitectura Medallion Bronze → Silver → Gold. Procesa eventos de usuario simulados y datos de entrenamiento con pipelines incrementales, verificaciones de calidad de datos y control de acceso basado en roles. Diseñado para mostrar patrones modernos de ingeniería de datos y conjuntos de datos listos para análisis."
             },
             project4: {
-                title: "Link Shortener Serverless en AWS",
-                description: "Acortador de URLs fullstack desplegado sobre arquitectura serverless en AWS. Frontend React servido desde S3 + CloudFront, API REST con API Gateway v2 y autenticación JWT con Cognito. Backend con cuatro funciones Lambda en Node.js y DynamoDB como base de datos NoSQL. Toda la infraestructura definida como código con Terraform."
+                title: "Plataforma Social de Fitness",
+                description: "Plataforma social para crear retos deportivos multi-actividad, compartir progreso y seguir métricas con dashboards (React 19 + Vite + Chart.js). Backend Express + MongoDB con JWT, Swagger y despliegue completo en Render/Netlify."
             },
             project5: {
-                title: "NYC Taxi Local Data Platform + MCP",
-                description: "Plataforma de datos local end-to-end sobre datos públicos de NYC Yellow Taxi. Arquitectura Medallion con dbt y DuckDB, orquestación mensual con Airflow, dashboards en Metabase y servidor MCP con text-to-SQL vía Claude Haiku para consultas en lenguaje natural. Sin coste cloud."
+                title: "Link Shortener Serverless en AWS",
+                description: "Acortador de URLs fullstack desplegado sobre arquitectura serverless en AWS. Frontend React servido desde S3 + CloudFront, API REST con API Gateway v2 y autenticación JWT con Cognito. Backend con cuatro funciones Lambda en Node.js y DynamoDB como base de datos NoSQL. Toda la infraestructura definida como código con Terraform."
             },
             project6: {
                 title: "Motor de Videojuegos 3D",
@@ -222,24 +222,24 @@ const languages = {
         projects: {
             title: "Featured Projects",
             project1: {
-                title: "AI Multi-Agent Diet & Health Assistant",
-                description: "Multi-agent AI health assistant built with Google ADK and FastAPI. Orchestrator-based architecture with specialized backend agents for recommendations, user stats, and content safety. Configurable limits, mock data abstraction, and optional session persistence via Vertex AI."
+                title: "NYC Taxi Local Data Platform + MCP",
+                description: "End-to-end local data platform on NYC Yellow Taxi public data. Medallion architecture with dbt and DuckDB, monthly orchestration with Airflow, Metabase dashboards, and an MCP server with text-to-SQL via Claude Haiku for natural language querying. Zero cloud cost."
             },
             project2: {
-                title: "Fitness Social Platform",
-                description: "Social platform for creating multi-activity fitness challenges, sharing progress, and tracking metrics through interactive dashboards (React 19 + Vite + Chart.js). Express + MongoDB backend with JWT, Swagger and full deployment on Render/Netlify."
+                title: "AI Multi-Agent Diet & Health Assistant",
+                description: "Multi-agent AI health assistant built with Google ADK and FastAPI. Orchestrator-based architecture with specialized backend agents for recommendations, user stats, and content safety. Configurable limits, mock data abstraction, and optional session persistence via Vertex AI."
             },
             project3: {
                 title: "Medallion Fitness Pipeline",
                 description: "Portfolio fitness data lake built with Dataform and BigQuery, implementing a Bronze → Silver → Gold Medallion Architecture. Processes simulated user events and workout data with incremental pipelines, data quality checks, and role-based access control. Designed to showcase modern data engineering patterns and analytics-ready datasets."
             },
             project4: {
-                title: "Serverless Link Shortener on AWS",
-                description: "Full-stack URL shortener deployed on a serverless AWS architecture. React frontend served from S3 + CloudFront, REST API via API Gateway v2, JWT authentication with Cognito, four Node.js Lambda functions, and DynamoDB as the NoSQL database. All infrastructure defined as code with Terraform."
+                title: "Fitness Social Platform",
+                description: "Social platform for creating multi-activity fitness challenges, sharing progress, and tracking metrics through interactive dashboards (React 19 + Vite + Chart.js). Express + MongoDB backend with JWT, Swagger and full deployment on Render/Netlify."
             },
             project5: {
-                title: "NYC Taxi Local Data Platform + MCP",
-                description: "End-to-end local data platform on NYC Yellow Taxi public data. Medallion architecture with dbt and DuckDB, monthly orchestration with Airflow, Metabase dashboards, and an MCP server with text-to-SQL via Claude Haiku for natural language querying. Zero cloud cost."
+                title: "Serverless Link Shortener on AWS",
+                description: "Full-stack URL shortener deployed on a serverless AWS architecture. React frontend served from S3 + CloudFront, REST API via API Gateway v2, JWT authentication with Cognito, four Node.js Lambda functions, and DynamoDB as the NoSQL database. All infrastructure defined as code with Terraform."
             },
             project6: {
                 title: "3D Game Engine",
