@@ -60,12 +60,12 @@ const languages = {
                 description: "Portfolio fitness data lake construido con Dataform y BigQuery, implementando una arquitectura Medallion Bronze → Silver → Gold. Procesa eventos de usuario simulados y datos de entrenamiento con pipelines incrementales, verificaciones de calidad de datos y control de acceso basado en roles. Diseñado para mostrar patrones modernos de ingeniería de datos y conjuntos de datos listos para análisis."
             },
             project4: {
-                title: "Aplicación Web para la Enseñanza",
-                description: "Aplicación full-stack construida con NestJS, MongoDB, Next.js, TypeScript y JWT. Permite diseñar cursos modulares, gestionar bases de datos de alumnos y controlar el progreso mediante herencia estructurada de cursos, módulos y ejercicios."
-            },
-            project5: {
                 title: "Link Shortener Serverless en AWS",
                 description: "Acortador de URLs fullstack desplegado sobre arquitectura serverless en AWS. Frontend React servido desde S3 + CloudFront, API REST con API Gateway v2 y autenticación JWT con Cognito. Backend con cuatro funciones Lambda en Node.js y DynamoDB como base de datos NoSQL. Toda la infraestructura definida como código con Terraform."
+            },
+            project5: {
+                title: "NYC Taxi Local Data Platform + MCP",
+                description: "Plataforma de datos local end-to-end sobre datos públicos de NYC Yellow Taxi. Arquitectura Medallion con dbt y DuckDB, orquestación mensual con Airflow, dashboards en Metabase y servidor MCP con text-to-SQL vía Claude Haiku para consultas en lenguaje natural. Sin coste cloud."
             },
             project6: {
                 title: "Motor de Videojuegos 3D",
@@ -89,10 +89,10 @@ const languages = {
                         title: "Chief Technology Officer (CTO)",
                         intro: "",
                         bullets: [
-                            "Arquitectura de plataforma end-to-end: backend, datos, pipelines de IA e infraestructura en la nube.",
-                            "Plataforma cloud-native de datos clínicos en Google Cloud / BigQuery (ingesta, transformación, analítica; 5M+ registros).",
-                            "Pipelines de IA multimodal y capa agéntica multi-agente para orquestación de decisiones e intervenciones en tiempo casi real.",
-                            "Microservicios y arquitectura orientada a eventos en Python, Kotlin y Java; CI/CD, entornos aislados y decisiones técnicas de producto en equipo reducido."
+                            "Contribuyo a decisiones de producto, diseño y arquitectura de datos combinándolas con desarrollo hands-on en un equipo de 4 ingenieros en una startup de datos clínicos.",
+                            "Mejoro la arquitectura de datos en BigQuery (modelos analíticos, rendimiento y consultas) y formo al equipo en buenas prácticas de uso de datos.",
+                            "Diseño e implemento las capacidades de IA del producto, integrando modelos y procesamiento de datos clínicos en tiempo real.",
+                            "Aplico principios de arquitectura de software (SOLID, arquitectura hexagonal) y prácticas de testing y code review para mantener el código limpio y mantenible."
                         ],
                         techStack: "",
                         tags: ["Python", "Kotlin", "Java", "FastAPI", "BigQuery", "GCP", "IA agéntica", "Microservicios", "Event-Driven"]
@@ -103,25 +103,25 @@ const languages = {
                 title: "Backend and Data Engineer",
                 company: "Mential Health Technologies",
                 period: "2025 - mar. 2026",
-                summary: "Soluciones cloud y automatización para proporcionar servicios de salud digitales seguros.",
-                description: "Trabajo en plataformas de datos cloud, sistemas de IA y microservicios distribuidos: data lakes en BigQuery, orquestación de agentes inteligentes, APIs en Kotlin/Java y pipelines multimodales para texto, audio y señales de comportamiento. Lidero integraciones seguras, automatización CI/CD y observabilidad end-to-end en GCP, conectando decisiones clínicas con datos confiables y en tiempo real.",
+                summary: "Plataforma de datos cloud-native en GCP/BigQuery, automatización ETL y microservicios distribuidos para sistemas clínicos con IA.",
+                description: "Diseñé e implementé la plataforma Big Data cloud-native en GCP/BigQuery (data lake, pipelines de ingesta y capas de transformación analítica) para grandes volúmenes de datos clínicos estructurados. Construí automatizaciones ETL con Apache Airflow y Dataform para procesamiento incremental fiable, y microservicios distribuidos en Python, Java y Kotlin con arquitectura event-driven y pipelines multimodales (texto, audio, señales de comportamiento).",
                 projects: {
                     project1: {
-                        title: "Arquitectura de Microservicios en Cloud para Procesamiento Clínico con IA",
-                        description: "Plataforma escalable desplegada en Google Cloud que integra múltiples microservicios para gestionar datos clínicos, autenticación y procesamiento mediante modelos de IA. Incluye servicios especializados para la validación y almacenamiento de datos, ejecución de trabajos en la nube y sincronización con estándares FHIR y Firestore.",
-                        tags: ["Microservicios", "Python", "Flask", "Java", "Express", "Cloud Run", "Cloud Functions", "Pub/Sub", "Firestore", "Firebase Auth", "Buckets", "FHIR"],
+                        title: "Plataforma BigQuery Data Lake Automatizada",
+                        description: "Data lake cloud-native en BigQuery con pipelines de ingesta, limpieza y transformación analítica en capas usando SQL y Dataform. Orquestación ETL con Apache Airflow para procesamiento incremental fiable. Modelos analíticos gobernados, control de acceso y CI/CD para datos clínicos auditables a escala.",
+                        tags: ["BigQuery", "Dataform", "Apache Airflow", "SQL", "Data Lake", "CI/CD", "GCP"],
                         ctaLabel: "Código Privado"
                     },
                     project2: {
-                        title: "API para Gestión Clínica con App Android Nativa",
-                        description: "Desarrollo de API segura para gestión de datos de pacientes con autenticación y almacenamiento en base de datos. La aplicación Android nativa sincroniza datos manuales y automáticos, usando mecanismos para mantener la conexión activa y la sincronización en tiempo real.",
-                        tags: ["API REST", "FastAPI", "Python", "Kotlin", "Android", "Firestore", "Firebase Auth"],
+                        title: "Arquitectura de Microservicios en Cloud para Procesamiento Clínico con IA",
+                        description: "Plataforma escalable en Google Cloud con microservicios distribuidos en Python, Java y Kotlin para gestión de datos clínicos, autenticación y procesamiento mediante modelos de IA. Arquitectura event-driven con Pub/Sub, control de acceso sobre datos sensibles y extensión de plataforma FHIR R4 escalando la ingesta a 5M+ registros.",
+                        tags: ["Microservicios", "Python", "Java", "Kotlin", "Cloud Run", "Cloud Functions", "Pub/Sub", "Firestore", "FHIR R4", "Event-Driven"],
                         ctaLabel: "Código Privado"
                     },
                     project3: {
-                        title: "Plataforma BigQuery Data Lake Automatizada",
-                        description: "Diseño de un data lake cloud-native en BigQuery con pipelines de ingestión, limpieza y estandarización automatizados usando SQL y Dataform, modelos analíticos gobernados, automatización CI/CD y monitoreo para insights confiables y repetibles.",
-                        tags: ["BigQuery", "Dataform", "SQL", "Data Lake", "Automatización", "CI/CD", "GCP"],
+                        title: "API para Gestión Clínica con App Android Nativa",
+                        description: "API segura para gestión de datos de pacientes con autenticación y almacenamiento en base de datos. La aplicación Android nativa sincroniza datos manuales y automáticos manteniendo conexión activa y sincronización en tiempo real.",
+                        tags: ["API REST", "FastAPI", "Python", "Kotlin", "Android", "Firestore", "Firebase Auth"],
                         ctaLabel: "Código Privado"
                     }
                 }
@@ -234,12 +234,12 @@ const languages = {
                 description: "Portfolio fitness data lake built with Dataform and BigQuery, implementing a Bronze → Silver → Gold Medallion Architecture. Processes simulated user events and workout data with incremental pipelines, data quality checks, and role-based access control. Designed to showcase modern data engineering patterns and analytics-ready datasets."
             },
             project4: {
-                title: "Web Application for Teaching",
-                description: "Full-stack platform (NestJS, MongoDB, Next.js, TypeScript, JWT) where teachers build modular courses, manage student databases and track progress through inherited course/module/exercise structures."
-            },
-            project5: {
                 title: "Serverless Link Shortener on AWS",
                 description: "Full-stack URL shortener deployed on a serverless AWS architecture. React frontend served from S3 + CloudFront, REST API via API Gateway v2, JWT authentication with Cognito, four Node.js Lambda functions, and DynamoDB as the NoSQL database. All infrastructure defined as code with Terraform."
+            },
+            project5: {
+                title: "NYC Taxi Local Data Platform + MCP",
+                description: "End-to-end local data platform on NYC Yellow Taxi public data. Medallion architecture with dbt and DuckDB, monthly orchestration with Airflow, Metabase dashboards, and an MCP server with text-to-SQL via Claude Haiku for natural language querying. Zero cloud cost."
             },
             project6: {
                 title: "3D Game Engine",
@@ -263,10 +263,10 @@ const languages = {
                         title: "Chief Technology Officer (CTO)",
                         intro: "",
                         bullets: [
-                            "End-to-end platform architecture: backend, data, AI pipelines, and cloud infrastructure.",
-                            "Cloud-native clinical data platform on Google Cloud / BigQuery—ingestion, transformation, analytics; 5M+ records.",
-                            "Multimodal AI pipelines and an agentic multi-agent layer for decision orchestration and near-real-time interventions.",
-                            "Event-driven microservices in Python, Kotlin, and Java; CI/CD, isolated environments, and product-facing technical leadership in a small team."
+                            "Contribute to product, design and data architecture decisions, combining them with hands-on development within a 4-person engineering team at a clinical data startup.",
+                            "Improve the data architecture in BigQuery (analytical models, performance and queries) and train the team on data usage best practices.",
+                            "Design and implement the product's AI capabilities, integrating models and clinical data processing in real time.",
+                            "Apply software architecture and design principles (SOLID, hexagonal architecture) along with testing and code review practices to keep the codebase clean and maintainable."
                         ],
                         techStack: "",
                         tags: ["Python", "Kotlin", "Java", "FastAPI", "BigQuery", "GCP", "Agentic AI", "Microservices", "Event-Driven"]
@@ -277,25 +277,25 @@ const languages = {
                 title: "Backend and Data Engineer",
                 company: "Mential Health Technologies",
                 period: "2025 - Mar 2026",
-                summary: "Cloud solutions and automation to deliver secure digital health services.",
-                description: "I worked on cloud data platforms, AI systems and distributed microservices: BigQuery data lakes, intelligent agent workflows, Kotlin/Java APIs and multimodal pipelines for text, audio and behavioural signals. I drove secure integrations, CI/CD automation and observability on GCP so clinical decisions could rely on trusted, real-time data.",
+                summary: "Cloud-native data platform on GCP/BigQuery, ETL automation and distributed microservices for AI-driven clinical systems.",
+                description: "Designed and implemented a cloud-native Big Data platform on GCP/BigQuery (data lake, ingestion pipelines and analytical transformation layers) for large volumes of structured clinical data. Built ETL automations with Apache Airflow and Dataform for reliable, incremental processing, and distributed microservices in Python, Java and Kotlin with event-driven architecture and multimodal data pipelines (text, audio, behavioral signals).",
                 projects: {
                     project1: {
-                        title: "Cloud Microservices Architecture for Clinical Processing with AI",
-                        description: "Scalable platform deployed on Google Cloud that integrates multiple microservices to manage clinical data, authentication, and processing through AI models. Includes specialized services for data validation and storage, cloud job execution, and synchronization with FHIR standards and Firestore.",
-                        tags: ["Microservices", "Python", "Flask", "Java", "Express", "Cloud Run", "Cloud Functions", "Pub/Sub", "Firestore", "Firebase Auth", "Buckets", "FHIR"],
+                        title: "BigQuery Data Lake Automation Platform",
+                        description: "Cloud-native BigQuery data lake with layered ingestion, cleansing and analytical transformation pipelines using SQL and Dataform. ETL orchestrated with Apache Airflow for reliable incremental processing. Governed analytical models, role-based access control and CI/CD workflows for auditable, clinical-grade insights at scale.",
+                        tags: ["BigQuery", "Dataform", "Apache Airflow", "SQL", "Data Lake", "CI/CD", "GCP"],
                         ctaLabel: "Private Code"
                     },
                     project2: {
-                        title: "Clinical Management API with Native Android App",
-                        description: "Secure API for patient data management with authentication and database storage. The native Android application synchronizes manual and automatic data, using mechanisms to maintain an active connection and real-time sync.",
-                        tags: ["REST API", "FastAPI", "Python", "Kotlin", "Android", "Firestore", "Firebase Auth"],
+                        title: "Cloud Microservices Architecture for Clinical Processing with AI",
+                        description: "Scalable platform on Google Cloud with distributed microservices in Python, Java and Kotlin for clinical data management, authentication and AI model processing. Event-driven architecture with Pub/Sub, hardened access control over sensitive data, and extended FHIR R4 platform scaling ingestion to 5M+ records.",
+                        tags: ["Microservices", "Python", "Java", "Kotlin", "Cloud Run", "Cloud Functions", "Pub/Sub", "Firestore", "FHIR R4", "Event-Driven"],
                         ctaLabel: "Private Code"
                     },
                     project3: {
-                        title: "BigQuery Data Lake Automation Platform",
-                        description: "Designed a cloud-native BigQuery data lake with SQL/Dataform pipelines for ingestion, cleansing and orchestration, analytical models, governed semantics and CI/CD workflows that guarantee reliable, auditable insights.",
-                        tags: ["BigQuery", "Dataform", "SQL", "Data Lake", "Automation", "CI/CD", "GCP"],
+                        title: "Clinical Management API with Native Android App",
+                        description: "Secure API for patient data management with authentication and database storage. The native Android application synchronizes manual and automatic data using mechanisms to keep the connection active and enable real-time sync.",
+                        tags: ["REST API", "FastAPI", "Python", "Kotlin", "Android", "Firestore", "Firebase Auth"],
                         ctaLabel: "Private Code"
                     }
                 }
