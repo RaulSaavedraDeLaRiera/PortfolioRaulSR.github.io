@@ -438,23 +438,12 @@ function updateSkills(skills) {
     
     const skillCategories = document.querySelectorAll('#skills .category-title');
     if (skillCategories.length >= 6) {
-        skillCategories[0].textContent = skills.categories.backend;
-        skillCategories[1].textContent = skills.categories.data;
-        skillCategories[2].textContent = skills.categories.ai;
+        skillCategories[0].textContent = skills.categories.data;
+        skillCategories[1].textContent = skills.categories.ai;
+        skillCategories[2].textContent = skills.categories.backend;
         skillCategories[3].textContent = skills.categories.frontend;
         skillCategories[4].textContent = skills.categories.devprod;
         skillCategories[5].textContent = skills.categories.games;
-    } else if (skillCategories.length >= 5) {
-        skillCategories[0].textContent = skills.categories.backend;
-        skillCategories[1].textContent = skills.categories.data;
-        skillCategories[2].textContent = skills.categories.frontend;
-        skillCategories[3].textContent = skills.categories.devprod;
-        skillCategories[4].textContent = skills.categories.games;
-    } else if (skillCategories.length >= 4) {
-        skillCategories[0].textContent = skills.categories.backend;
-        skillCategories[1].textContent = skills.categories.frontend;
-        skillCategories[2].textContent = skills.categories.devprod;
-        skillCategories[3].textContent = skills.categories.games;
     }
 }
 
