@@ -48,8 +48,8 @@ const languages = {
         projects: {
             title: "Proyectos Destacados",
             project1: {
-                title: "NYC Taxi Local Data Platform + MCP",
-                description: "Plataforma de datos local end-to-end sobre datos públicos de NYC Yellow Taxi. Arquitectura Medallion con dbt y DuckDB, orquestación mensual con Airflow, dashboards en Metabase y servidor MCP con text-to-SQL vía Claude Haiku para consultas en lenguaje natural. Sin coste cloud."
+                title: "Data Pipeline With AI Querying",
+                description: "Pipeline de datos end-to-end sobre datos públicos de NYC Yellow Taxi. Arquitectura Medallion con dbt y DuckDB, orquestación mensual con Airflow, dashboards en Metabase y servidor MCP con text-to-SQL vía Claude Haiku para consultas en lenguaje natural."
             },
             project2: {
                 title: "Asistente multi-agente de dieta y salud (IA)",
@@ -222,8 +222,8 @@ const languages = {
         projects: {
             title: "Featured Projects",
             project1: {
-                title: "NYC Taxi Local Data Platform + MCP",
-                description: "End-to-end local data platform on NYC Yellow Taxi public data. Medallion architecture with dbt and DuckDB, monthly orchestration with Airflow, Metabase dashboards, and an MCP server with text-to-SQL via Claude Haiku for natural language querying. Zero cloud cost."
+                title: "Data Pipeline With AI Querying",
+                description: "End-to-end data pipeline on NYC Yellow Taxi public data. Medallion architecture with dbt and DuckDB, monthly orchestration with Airflow, Metabase dashboards, and an MCP server with text-to-SQL via Claude Haiku for natural language querying."
             },
             project2: {
                 title: "AI Multi-Agent Diet & Health Assistant",
